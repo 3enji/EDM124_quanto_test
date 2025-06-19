@@ -439,7 +439,7 @@ _Note: for all of the questions below give your answer in standard form._
 
 ## Fully worked example question
 
-::: {.callout-note title="Worked Example: Node 01"}
+<!-- ::: {.callout-note title="Worked Example: Node 01"} -->
 A group of biologists decide to travel from their hometown to a neighbouring village at an average speed of 120 furlongs per fortnight (1 furlong = 201 metres = 1/8 mile). 
 
 1. What was their average speed in metres per second? 
@@ -587,10 +587,7 @@ $$
     \; \textrm{m/s} \\
   & = 1.9940476\ldots \times 10^{-2}
     \; \textrm{m/s} \\
-  & = \underline{%_
-    1.99 \times 10^{-2}
-    \; \textrm{m/s} \; \; (\textrm{3sf})
-    }
+  & = \underline{1.99 \times 10^{-2} \; \textrm{m/s} \; \; (\textrm{3sf})}
 \end{aligned}
 $$
 
@@ -610,9 +607,7 @@ $$
   \\
     & = 1.071428571\dots \; \textrm{miles per day}
   \\
-    & = \underline{% _
-    1.07 \; \textrm{miles per day} \; \; (\textrm{3sf})
-  }
+    & = \underline{1.07 \; \textrm{miles per day} \; \; (\textrm{3sf})}
 \end{aligned}
 $$
 
@@ -622,7 +617,7 @@ $$
   $1.99 \times 10^{-2}$ ms^-1^.
 ]{.mark}
 :::
-:::
+<!-- ::: -->
 
 
 ## Additional reading

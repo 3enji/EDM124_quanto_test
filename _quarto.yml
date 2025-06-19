@@ -1,12 +1,14 @@
 project:
   type: book
+  output-dir: _book
   resources:
     - OV1114-Node-Notes.pdf
+    - OV1114-Node-Notes.docx
 
 book:
   title: "OV1114 Node Notes"
   author: "Benjamin Evans"
-  date: "today"
+  date: last-modified
   downloads: [pdf, docx]
   repo-url: https://github.com/3enji/EDM124_quanto_test
   repo-actions: [source] #[source, issue, edit]
@@ -58,3 +60,5 @@ format:
       #   </script>
     pdf:
       pdf-engine: xelatex   # or lualatex / pdflatex
+    docx:
+      default
