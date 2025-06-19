@@ -1,0 +1,60 @@
+project:
+  type: book
+  resources:
+    - OV1114-Node-Notes.pdf
+
+book:
+  title: "OV1114 Node Notes"
+  author: "Benjamin Evans"
+  date: "today"
+  downloads: [pdf, docx]
+  repo-url: https://github.com/3enji/CSG_edu_EDM118_poster
+  repo-actions: [source] #[source, issue, edit]
+  reader-mode: true
+  chapters:
+    - index.qmd
+    - test_02.qmd
+
+format:
+  html:
+    # theme: [darkly, cosmo]
+    theme: 
+      light: simplex #cosmo, materia, simplex, flatly,
+      dark: darkly #darkly, solar, slate
+    code-fold: true
+    code-tools: true
+    toc: true
+    respect-user-color-scheme: true
+    number-sections: true
+    equation-numbering: true  # enables auto equation numbers
+    fig-cap-location: bottom  # or top
+    html-math-method: mathjax
+    # fontsize: 1.1em
+    css: 
+      # styles.css
+      include/webex.css
+    include-after-body: 
+      include/webex.js
+    categories:
+      - EDM124
+      - ITO
+      - OV1114
+      - 2025-26
+    # include-in-header:
+      # text: |
+      #   <button id="fontToggle">Toggle Font</button>
+      #   <script>
+      #     const toggleBtn = document.getElementById("fontToggle");
+      #     const currentFont = localStorage.getItem("fontStyle") || "sans-serif";
+      #     document.body.classList.add(currentFont);
+
+      #     toggleBtn.onclick = () => {
+      #       const isSans = document.body.classList.contains("sans-serif");
+      #       document.body.classList.remove("sans-serif", "serif");
+      #       const newFont = isSans ? "serif" : "sans-serif";
+      #       document.body.classList.add(newFont);
+      #       localStorage.setItem("fontStyle", newFont);
+      #     };
+      #   </script>
+    pdf:
+      pdf-engine: xelatex   # or lualatex / pdflatex

@@ -1,0 +1,686 @@
+---
+title: "Node 01 - Basic Mathematical Techniques"
+author: "Benjamin Evans"
+format: 
+  html:
+    includes:
+      in-header: webexercises-deps.html
+editor:
+  markdown:
+    wrap: 72
+  render-on-save: true
+jupyter: false
+---
+<!-- [📄 Download PDF version](OV1114-Node-Notes.pdf){.download} -->
+```{r setup}
+#| echo: false
+# install.packages("webexercises")
+library(webexercises)
+```
+
+## Indices
+
+Indices are introduced in the Quantitative Methods for Optometry module (OV1115) and are used extensively in the Optometric Physics (OV1114) module.
+
+
+![Indices include a base and a power/index/exponent.](./figures/node01_indicesBaseExp.jpg){#fig-base-power}
+
+The term $a^{b}$ represents the number $a$ being multiplied by itself $b$
+times.
+
+$$
+\begin{aligned}
+a^3   &= 1 \times a \times a \times a \\
+a^1   &= 1 \times a \\
+a^{10} &= 1 \times a \times a \times a \times a \times a \times a \times a \times a \times a \times a
+\end{aligned}
+$$
+
+**Rules of indices:**
+
+$$
+a^p \times a^q = a^{p+q} 
+$$ {#eq-indicesR1}
+
+$$
+a^p \div a^q = a^{p - q} 
+$$ {#eq-indicesR2}
+
+$$
+(a^p)^q = a^{p \cdot q} 
+$$ {#eq-indicesR3}
+
+$$
+a^{-p} = \frac{1}{a^p} 
+$$ {#eq-indicesR4}
+
+$$
+a^0 = 1 
+$$ {#eq-indicesR5}
+
+$$
+a^{1/p} = \sqrt[p]{a} 
+$$ {#eq-indicesR6}
+
+$$
+a^{p/q} = \sqrt[q]{a^p} 
+\quad \text{or} \quad 
+\left( \sqrt[q]{a} \right)^p
+$$ {#eq-indicesR7}
+
+<!-- @eq-indicesR1 is an  -->
+
+::: {.callout-important}
+These rules can be applied to all rational exponents
+:::
+
+When using a computer it is not always possible to use the same symbols and
+notations as when writing by hand. The following alternative notation is used
+instead:
+
+<!-- \begin{equation*}
+	\verb|a^(3) = 1*a*a*a|
+\end{equation*} -->
+$a^{3} =$ `1*a*a*a`
+
+Therefore our rules of indices would be written (or typed) as:
+
+::: {.table-scroll}
+| Rule | Code Notation |
+|------|----------------|
+| @eq-indicesR1 | `(a^p)*(a^q) = a^(p+q)` |
+| @eq-indicesR2 | `(a^p)/(a^q) = a^(p−q)` |
+| @eq-indicesR3 | `(a^p)^q = a^(p*q)`     |
+| @eq-indicesR4 | `a^(-p) = 1/(a^p)`      |
+| @eq-indicesR5 | `a^0 = 1`               |
+| @eq-indicesR6 | `a^(1/p) = sqrt[p](a)`     |
+| @eq-indicesR7 | `a^(p/q) = sqrt[q](a^p)`   |
+:::
+
+Note the use of an asterisk (*) to represent multiplication, which avoids
+confusion with the letter $x$, and a forward slash (/) to indicate division. 
+
+A central dot ($\cdot$) is also sometimes used to denote multiplication in
+mathematical typesetting ($a \cdot b$ means the same as $a \ast b$).
+
+$$
+a \cdot b 
+\equiv
+a \ast b
+$$
+
+::: {.callout-caution}
+Be careful not to confuse the central dot with the decimal point, which sits
+on the baseline, as in $3.14$. For example:
+$$
+	2.5 \cdot 3.4 = 8.5
+$$
+:::
+
+::: {.callout-note}
+Test your knowledge!
+```{r, echo=FALSE}
+a <- 2.5
+b <- round(runif(1, min = 2.4, max = 6.8), 1)
+b <- round(runif(1, min = 4, max = 8))
+result <- a * b
+```
+`r a` $\cdot$ `r b` = `r fitb(result)`
+<!-- `r result` -->
+:::
+
+
+### Questions - Indices
+
+<!-- 1. 
+$\; 2x^{3} \times 3x^{2}$
+1. 
+$\; 4p^{3} \div 2p$
+1. 
+$\; {(p^{3})}^{2} \div p^{4}$
+1. 
+$\; (x^{0}+y^{0}) \div (2z^{0})$
+1. 
+$\; 21a^{3}b^{2} \div 7ab^{4}$
+1. 
+$\; 25^{\frac{1}{2}}$
+1. 
+$\; {(-5)}^{-3}$ -->
+<!-- ::: {.callout-tip collapse=true title="Show solutions"}
+1. $6x^{5}$
+1. $2p^{2}$
+1. $p^{2}$
+1. $1$
+1. $3a^{2}b^{-2}$
+1. $5$
+1. $\frac{1}{(-125)}$
+::: -->
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+1. $\; 2x^{3} \times 3x^{2}$  
+2. $\; 4p^{3} \div 2p$  
+3. $\; {(p^{3})}^{2} \div p^{4}$  
+4. $\; (x^{0}+y^{0}) \div (2z^{0})$
+
+:::
+
+::: {.column width="50%"}
+
+5. $\; 21a^{3}b^{2} \div 7ab^{4}$  
+6. $\; 25^{\frac{1}{2}}$  
+7. $\; {(-5)}^{-3}$
+
+:::
+
+:::
+
+::: {.callout-tip collapse=true title="Show solutions"}
+
+::: {.columns}
+
+::: {.column width="50%"}
+1. $6x^{5}$  
+2. $2p^{2}$  
+3. $p^{2}$  
+4. $1$
+:::
+
+::: {.column width="50%"}
+5. $3a^{2}b^{-2}$  
+6. $5$  
+7. $\frac{1}{(-125)}$
+:::
+
+:::
+
+:::
+
+*Note: this is the only time we ever use the division symbol $(\div)$ in
+this module. For clarity, division will typically be represented using a
+forward slash (/) or a fraction, e.g., $1/2$ or $\frac{1}{2}$.*
+
+## Standard form
+
+Standard form may be used to express any decimal number and it is commonly used
+to express very large and very small numbers. In standard form, numbers are
+written as
+
+$$
+a \times 10^{n} 
+$$
+
+where $1 \leq a < 10$ and $n$ is an integer (a whole number). 
+For example,
+\begin{align*}
+	3.57 \times 10^{4} & = (3.57) \times (10^{4}) \\
+	3.57 \times 10^{4} & = (3.57) \times (10,000) \\
+	3.57 \times 10^{4} & = 35,700
+\end{align*}
+
+Or, as entered into a computer: `3.57*10^(4) = 35,700`
+
+In many computer systems superscript exponents $\left(10^{4}\right)$ can be
+inconvenient to display.  As such, scientific notation is written using E
+notation.  This is where `En` (or sometimes lowercase `e`) represents 
+"times 10 raised to the power $n$". Mathematically:
+$$
+a\textrm{E}\,n \equiv a \times 10^{n}
+$$
+
+For example,
+$$
+	\texttt{3.57E4} \equiv 3.57 * 10^4
+$$
+$$
+	\texttt{9.1E-31} \equiv 9.1 \times 10^{-31}
+$$
+$$
+	\texttt{1.055e-34} \equiv 1.055 \times 10^{-34}
+$$
+So if, when using a computer, if you see text such as, `3.02e+2` or `3.02E+2` know that it is equivalent to $3.02 \times 10^{2}.$ 
+
+This `E` notation is used to represent large or small numbers more efficiently in computations and data storage. This notation is also referred to as _scientific_ notation in software such as Microsoft Excel.  
+
+## SI prefixes
+
+SI prefixes are metric prefixes that were standardised for use in the  
+International System of Units (SI) (from the French name: *Système International d'unités*).
+
+You may be familiar with some of these prefixes from units such as  
+**centi**metres, **millimetres**, **kilo**metres, **giga**bytes, and **nano**metres.
+
+### Table: SI Prefixes
+
+::: {.table-scroll}
+| Prefix | Symbol | Decimal             | Power of 10     |
+|--------|--------|---------------------|-----------------|
+| tera   | T      | 1,000,000,000,000   | 10^12^       |
+| giga   | G      | 1,000,000,000       | 10^9^        |
+| mega   | M      | 1,000,000           | 10^6^        |
+| kilo   | k      | 1,000               | 10^3^        |
+| –      | –      | 1                   | 10^0^        |
+| deci   | d      | 0.1                 | 10^-1^       |
+| centi  | c      | 0.01                | 10^-2^       |
+| milli  | m      | 0.001               | 10^-3^       |
+| micro  | μ      | 0.000001            | 10^-6^       |
+| nano   | n      | 0.000000001         | 10^-9^       |
+| pico   | p      | 0.000000000001      | 10^-12^      |
+: A list of key SI prefixes used in the optometric physics module.  
+{#tbl-prefixes}
+:::
+
+::: {.callout-tip}
+You need to learn the prefixes shown in @tbl-prefixes.
+:::
+
+## Units
+
+The SI prefixes can be applied to any metric unit, including grams (`g`)
+and metres (`m`). A **kilo**gram is $1000$ or $1\times 10^{3}$
+grams and one **nano** metre is 0.000 000 001 or $1\times 10^{-9}$ metres.
+
+As you can see, it is far easier to use the SI prefixes and standard form when
+working with very large and very small values! 
+
+Many optometric physics problems require some form of unit conversion and it's
+important to ensure that you are able to convert between the units and prefixes
+shown in @tbl-prefixes.
+
+
+### Questions - Unit Conversions
+
+8. Convert 600nm into metres  
+1. Convert 38μm into nanometres (nm)
+1. Convert 2.2GHz to Hz
+1. Calculate 3.4cm $\times$ 2.1mm giving your answer in m^2^
+1. Convert your answer to the previous question to cm^2^
+
+::: {.callout-tip collapse=true title="Show solutions"}
+
+8. $\; 6.00 \times 10^{-7} \; \textrm{m}$ (3sf)  
+1. $\; 3.8 \times 10^{4} \; \textrm{nm}$ or $38,000 \textrm{nm}$
+1. $\; 2.2 \times 10^{9} \; \textrm{Hz}$  
+1. $\; 7.14 \times 10^{-5} \; \textrm{m}^{2}$  
+1. $\; 7.14 \times 10^{-1} \; \textrm{cm}^{2}$  
+
+:::
+
+## Rounding and significant figures
+
+You will be expected to know how to round to a given number of decimal places or significant figures. In the optometric physics module the standard rules for rounding apply:
+
+- If the digit to be dropped is greater or equal to 5, the last retained
+	    digit is increased by one
+- If the digit to be dropped is less than 5, the last remaining digit is
+	    left as it is
+
+### What is a significant figure?
+A significant figure (often abbreviated to s.f.) is any digit in a number that carries meaningful information about its precision. Significant figures are a way of expressing the level of accuracy behind a measurement.
+
+
+The number of significant figures in a result is the number of figures that are known with some degree of reliability. For example, the number 13.2 is said to have 3 significant figures (1, 3, and 2) and the number 13.20 is said to have 4 significant figures (1, 3, 2, and 0). Note that any zero after the first significant digit is significant.
+
+### Rules for significant figures
+There are several rules used to determine which digits are significant:
+
+
+1. All nonzero digits are significant (1,2,3,4,5,6,7,8, and 9)
+1. Zeroes between nonzero digits are significant (e.g., the zeros in 403,
+30004, and 20.02 are significant)
+1. Zeroes to the left of the first nonzero digits are not significant;
+such zeros merely indicate the position of the decimal point (e.g., the
+zeros in 0.03 and 0.0042 are not significant)
+1. Zeroes to the right of a decimal point in a number are significant
+(e.g.\ the zeros in 38.00 are significant)
+
+::: {.callout-warning}
+Note that trailing zeros in a whole number without a decimal point are not necessarily significant.
+:::
+
+A value of 100 could have one, two, or three significant figures depending on how it's measured or written (e.g., 100.0 would have four significant figures, while 100 may have only one, if it's an estimate or if the instrument you are using only measures to the nearest 100).
+
+### Examples
+
+- 1.234 g has 4 significant figures
+- 3.0002 kg has 5 significant figures
+- 0.001$^\circ$C has 1 significant figure
+- 0.200g has 3 significant figures
+- $5.060 \times 10^{4}$ ($\equiv$ 50,600) has 4 significant figures
+- `5.67E+12` ($\equiv$ 5,670,000,000,000) has 3 significant figures
+
+
+::: {.callout-tip}
+If not specified in the question give your answer in full
+and then round your answer to 3 significant figures on the line below.
+:::
+
+### Questions - Rounding
+
+13. Round $4.312728302$ to four significant figures
+1. Round $6.0067343\times 10^{-4}$ to three significant figures
+
+::: {.callout-tip collapse=true title="Show solutions"}
+
+13. $\; 4.313$ (4sf)  
+1. $\; 6.01 \times 10^{-4}$ (3sf)
+
+:::
+
+::: {.callout-note}
+In OV1114, we never round to fewer than 3 significant figures, and rounding 
+should only be done at the final step of a calculation. Use full precision 
+throughout multi-step problems. For example, if step 1 gives 2.54832, do not 
+round to 2.54 before step 2 — continue using the full value.
+:::
+
+## Mathematical symbols used throughout the module 
+
+Mathematics and physics make extensive use of symbolic notation to express 
+concepts precisely and efficiently. These symbols act as a kind of shorthand 
+— allowing us to communicate complex ideas in a compact form that is easy to 
+manipulate in equations and mathematical working.
+
+You’ll encounter a number of standard symbols throughout this module, 
+including those borrowed from Greek, logic, and physical constants. 
+Familiarity with these will not only help with solving problems, but also with 
+interpreting derivations, experimental descriptions, and theoretical explanations.
+
+::: {.scrollable}
+| Symbol       | Meaning                            | Example Use                                      |
+|--------------|-------------------------------------|-------------------------------------------------------------|
+| $\therefore$            | Therefore                          | Logical conclusion: $\; \therefore \; x = 3$                               |
+| $\because$            | Because                            | Logical premise: $\; \because \; x^2 = 9$                                |
+| =            | Equals                             | Exact equality: $x = 2$                                     |
+| $\approx$            | Approximately equal to             | Estimation: $\pi \approx 3.14$                              |
+| $\equiv$            | Identically equal to               | Identities: $\sin^2 x + \cos^2 x \equiv 1$                    |
+| $\propto$           | Proportional to                    | $F \propto a$                              |
+: A list of commonly used mathematical symbols and their contextual meanings 
+in the optometric physics module.  
+{#tbl-math-symbols}
+:::
+
+::: {.scrollable}
+| Symbol       | Meaning                            | Example Use                       |
+|--------------|-------------------------------------|----------------------------------|
+| $\Delta$            | Change / difference                | $\Delta x = x_2 - x_1$            |
+| $\alpha$            | Alpha (angle)                      | $\alpha = 30^\circ$               |
+| $\beta$            | Beta (angle)                       | $\alpha = 1.32 \; \textrm{rad}$   |
+| $\lambda$            | Lambda (symbol for wavelength)     | $\lambda = 500\,\textrm{nm}$      |
+| $\Omega$            | Omega (symbol for solid angle)     | $\Omega = 100 \; \textrm{sr}$     |
+| $\phi$            | Phi (angle or flux)                | $\phi_{e} = 2.5 \; \textrm{W}$    |
+| $\pi$           | Pi (mathematical constant)         | $\pi = 3.14159\ldots$             |
+| $\psi$            | Psi (wavefunction)                 | $\psi(x, t) = \cos{(2x+t)}$       |
+| $\theta$            | Theta (angle)                      | $\theta = 45^\circ$               | 
+: Common Greek letters used to represent angles, constants, and physical 
+quantities throughout the module.  
+{#tbl-greek-symbols}
+:::
+
+## Bonus Questions
+
+### Questions - Bonus
+
+_Note: for all of the questions below give your answer in standard form._
+
+15. Convert 43 nm into metres
+1. Convert 18 km into nm
+1. Convert 48 nm^2^ into cm^2^
+
+::: {.callout-tip collapse=true title="Show solutions"}
+
+15. $\; 4.3 \times 10^{-8} \; \textrm{m}$
+1. $\; 1.8 \times 10^{13} \; \textrm{nm}$
+1. $\; 4.8 \times 10^{-13} \; \textrm{cm}^{2}$
+
+:::
+
+## Fully worked example question
+
+::: {.callout-note title="Worked Example: Node 01"}
+A group of biologists decide to travel from their hometown to a neighbouring village at an average speed of 120 furlongs per fortnight (1 furlong = 201 metres = 1/8 mile). 
+
+1. What was their average speed in metres per second? 
+1. On average how many miles did the group cover each day?
+
+::: {.callout-tip collapse=true title="Numerical Solutions"}
+1. $\; 1.99 \times 10^{−2} \; \textrm{m/s}$ [or metres per second] (3sf)
+1. $\; 1.07$ miles per day (3sf)
+:::
+
+::: {.callout-warning collapse=true title="Working"}
+
+With any question the first step is to identify and write out the values given in the question...
+
+##### Step 1: Write out values given in the question {.unnumbered}
+
+$$
+\begin{aligned}
+v
+		 & = 120 \; \textrm{furlongs per fortnight}
+		\\
+		 & = 120 \; \textrm{furlongs/fortnight}
+		\\
+		 & = 120 \; \textrm{(furlongs)}(\textrm{fortnight}^{-1})
+\end{aligned}
+$$
+
+##### Step 2: Convert furlongs to metres and miles {.unnumbered}
+
+We are told that 
+
+$$
+1 \; \textrm{furlong} = 201 \; \textrm{metres}
+$$ {#eq-N1FurtoMetres}
+$$
+1 \; \textrm{furlong} = 0.125 \;\textrm{miles}
+$$ {#eq-N1FurtoMiles}
+
+Using @eq-N1FurtoMetres, if 1 furlong = 201 metres...
+
+$$
+\begin{aligned}
+\rightarrow 120 \; \textrm{furlongs} 
+  & = 120 \times 201 \; \textrm{metres}                                                                 \\
+  & = 24,120 \; \textrm{metres}              \\
+  & = 2.412 \times 10^{4} \; \textrm{metres}
+  % \\ (&= 24.12 \; \textrm{kilometres} )%\;\; (or 24 kilometres))
+\end{aligned}
+$$
+
+Using @eq-N1FurtoMiles, if 1 furlong = 0.125 miles...
+
+$$
+\begin{aligned}
+\rightarrow 120 \; \textrm{furlongs}
+  & = 120 \times 0.125 \; \textrm{miles} \\
+  & = 15 \; \textrm{miles}
+\end{aligned}
+$$
+
+$$
+\therefore
+$$
+$$
+\begin{aligned}
+120 \; \textrm{furlongs per fortnight} 
+  & = 2.412 \times 10^{4} \; \textrm{metres per fortnight} \\
+  & = 15 \; \textrm{miles per fortnight}
+\end{aligned}
+$$
+
+_Recall from @tbl-math-symbols that $\therefore$ is a shorthand way of 
+writing 'therefore'._
+
+##### Step 3:  Convert `per fortnight' to per hour and per day {.unnumbered}
+
+We know that
+
+$$
+\begin{aligned}
+1 \; \textrm{fortnight} & = 2 \; \textrm{weeks}                                          \\
+  1 \; \textrm{week}      & = 7 \; \textrm{days}                                           \\
+  1 \; \textrm{day}       & = 24 \; \textrm{hours}                                         \\
+  1 \; \textrm{hour}      & = 60 \; \textrm{minutes}                                       \\
+  1 \; \textrm{minute}    & = 60 \; \textrm{seconds}                                       \\
+\end{aligned}
+$$
+$$
+\therefore
+$$
+$$
+\begin{aligned}
+1 \; \textrm{fortnight} & = 2 \; \textrm{weeks}                                          \\
+                        & = 2 \times 7 \; \textrm{days}                                  \\
+                        & = 2 \times 7 \times 24 \; \textrm{hours}                       \\
+                        & = 2 \times 7 \times 24 \times 60 \; \textrm{minutes}           \\
+                        & = 2 \times 7 \times 24 \times 60 \times 60 \; \textrm{seconds} \\
+1 \; \textrm{fortnight} & = 14 \; \textrm{days}                                          \\
+                        & = 336 \; \textrm{hours}                                        \\
+                        & = 20,160 \; \textrm{minutes}                                   \\
+                        & = 1,209,600 \; \textrm{seconds}
+\end{aligned}
+$$
+
+
+We also know that `per' fortnight is equivalent to fortnight$^{-1}$
+
+$$
+\begin{aligned}
+1 \; \textrm{per fortnight} 
+  &= 14^{-1} \; \textrm{per day}
+  \quad
+  \left(
+    \text{or} \; \; 
+    \dfrac{1}{14} \; \; \textrm{per day}
+  \right) \\
+  & = 336^{-1} \; \textrm{per hour}	\nonumber      \\
+  & = 20,160^{-1} \; \textrm{per minute}	\nonumber \\
+  & = 1,209,600^{-1} \; \textrm{per second}
+\end{aligned}
+$$
+
+$$
+\rightarrow 
+1 \; \textrm{per fortnight} = 14^{-1} \; \textrm{per day}
+$$ {#eq-N1:pFN2pDay}
+$$
+\rightarrow 
+1 \; \textrm{per fortnight} = 1,209,600^{-1} \; \textrm{per second}
+$$ {#eq-N1:pFN2pSec}
+
+##### Step 4: Convert metres per fortnight to metres per second using @{eq-N1:pFN2pSec} {.unnumbered}
+
+$$
+\begin{aligned}
+1 \; \textrm{m/fortnight}
+  & = {(1,209,600)}^{-1} 
+    \; \textrm{m/s} \\
+2.412 \times 10^{4} \; \textrm{m/fortnight}
+  & = 2.412 \times 10^{4} \times {(1,209,600)}^{-1} 
+    \; \textrm{m/s} \\
+  & = \left(
+    \dfrac{2.412 \times 10^{4}}{1.2096 \times 10^{6}}
+    \right)
+    \; \textrm{m/s} \\
+  & = 1.9940476\ldots \times 10^{-2}
+    \; \textrm{m/s} \\
+  & = \underline{%_
+    1.99 \times 10^{-2}
+    \; \textrm{m/s} \; \; (\textrm{3sf})
+    }
+\end{aligned}
+$$
+
+_Underlining your final answer can make it easier to check for mistakes when you review your working._
+
+##### Step 5: Convert miles per fortnight to miles per day using @{eq-N1:pFN2pDay} {.unnumbered}
+
+$$
+\begin{aligned}
+1 \; \textrm{mile per fortnight}
+    & = {(14)}^{-1} \; \textrm{miles per day}
+  \\
+  \rightarrow 15 \; \textrm{miles per fortnight}
+    & = 15 \times {(14)}^{-1} \; \textrm{miles per day}
+  \\
+    & = \left( \dfrac{15}{14} \right) \; \textrm{miles per day}
+  \\
+    & = 1.071428571\dots \; \textrm{miles per day}
+  \\
+    & = \underline{% _
+    1.07 \; \textrm{miles per day} \; \; (\textrm{3sf})
+  }
+\end{aligned}
+$$
+
+[
+  The group covers, on average, approximately 1.07 miles every day 
+  and they move at an average speed of approximately 
+  $1.99 \times 10^{-2}$ ms^-1^.
+]{.mark}
+:::
+:::
+
+
+## Additional reading
+
+
+### If feeling less comfortable {.unnumbered}
+
+- **Indices** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/zpmyrwx/revision/1)
+- **Standard form** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/zxsv97h/revision/1)
+- **Units & Prefixes** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/zyqwpbk/revision/2)
+- **Rounding** — [Link (Khan Academy)](https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2/imp-rounding-whole-numbers/v/rounding-whole-numbers-2)
+
+### If feeling more comfortable {.unnumbered}
+
+- **Indices** — [Link (Math Centre)](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-indicespowers-2009-1.pdf) *(also used in OV1115)*
+- **Units & Prefixes** — [Link (NPL)](https://www.npl.co.uk/si-units)
+
+
+
+
+
+
+
+
+# Testing ?
+
+::: {.challenge}
+### Quick Quiz
+
+Which of these is used to join datasets in R?
+
+`r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
+
+:::
+
+
+### Fill-In-The-Blanks (`fitb()`)
+
+Create fill-in-the-blank questions using `fitb()`, providing the answer as the first argument.
+
+- 2 + 2 is `r fitb(4)`
+
+::: {.callout-note}
+This is a note callout.
+:::
+
+::: {.callout-warning}
+This is a warning callout
+:::
+
+::: {.callout-important}
+This is an important callout
+:::
+
+::: {.callout-caution}
+This is a caution callout
+:::
+
+::: {.callout-tip}
+This is a tip callout.With a bit of `code`.
+:::

@@ -1,0 +1,30 @@
+---
+title: "Node 01 - Basic Mathematical Techniques"
+author: "Benjamin Evans"
+format: 
+  html:
+    toc: true
+    code-fold: true
+editor:
+  markdown:
+    wrap: 72
+  render-on-save: true
+jupyter: false
+---
+
+## Indices
+
+Indices are also described in the quantitative methods for optometry module and
+they are used frequently in optometric physics module.
+
+The term $a^{b}$ represents the number $a$ being multiplied by itself $b$
+times.
+
+::: {.challenge}
+### Quick Quiz
+
+Which of these is used to join datasets in R?
+
+`r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
+
+:::
