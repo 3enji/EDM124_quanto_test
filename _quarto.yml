@@ -8,7 +8,7 @@ book:
   author: "Benjamin Evans"
   date: "today"
   downloads: [pdf, docx]
-  repo-url: https://github.com/3enji/CSG_edu_EDM118_poster
+  repo-url: https://github.com/3enji/EDM124_quanto_test
   repo-actions: [source] #[source, issue, edit]
   reader-mode: true
   chapters:
