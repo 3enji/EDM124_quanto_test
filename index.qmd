@@ -1,10 +1,11 @@
 ---
-title: "Node 01 - Basic Mathematical Techniques"
-author: "Benjamin Evans"
+# title: "Foreword"
+author: "Benjamin Evans & Marisa Rodríguez-Carmona"
+numbered: false
 format: 
   html:
-    toc: true
-    code-fold: true
+    includes:
+      in-header: webexercises-deps.html
 editor:
   markdown:
     wrap: 72
@@ -12,19 +13,37 @@ editor:
 jupyter: false
 ---
 
-## Indices
+# Foreword {.unnumbered}
 
-Indices are also described in the quantitative methods for optometry module and
-they are used frequently in optometric physics module.
+## Practical advice {.unnumbered}
 
-The term $a^{b}$ represents the number $a$ being multiplied by itself $b$
-times.
+With one or two exceptions each Node contains theoretical and practical components. We highly recommend that you read through these notes with some rough paper handy and actively engage with the example questions. Resources linked to these examples will be made available throughout the year, but these examples
+work best when you attempt them before reviewing the worked solutions.
 
-::: {.challenge}
-### Quick Quiz
+The best predictor of your final OV1114 grade is how engaged you are with the course. Students who attempt all of the examples and engage with the resources each week perform significantly better in all assessments.
 
-Which of these is used to join datasets in R?
+We have honestly enjoyed constructing this course, we hope you enjoy it too.
 
-`r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
+_M. Rodriguez-Carmona and B. Evans, September 2025_
 
+## History {.unnumbered}
+
+The optometric physic module started in 2018 and the module was co-created, co-designed, and co-implemented by Marisa Rodríguez Carmona and Benjamin Evans. The module is designed to provide an introduction to physics, its application and significance in optometry, and the basic optical knowledge necessary for studying the human eye. By successfully completing the optometric physics module you will ensure you have the foundation required to understand more complex concepts in optics and visual optics.
+
+For the first three years of the course (2018-19, 2019-20, 2020-21) theoretical content was described in both lectures and ‘tutorial’ sessions. In the summer of 2021 the module content and structure was broken down and remoulded into holistic Nodes by Benjamin Evans. These notes were created at the same time to serve as the kernel of the module. While the original notes were based purely upon lectures and tutorials, given by Marisa Rodríguez Carmona and Benjamin Evans respectively, they continue to evolve each year. In its current iteration the module is run by Benjamin Evans & Marisa Rodríguez Carmona.
+
+## Revisions {.unnumbered}
+
+::: {.table-scroll}
+| Version | Date           | Author         | Comments                                 |
+|---------|----------------|----------------|------------------------------------------|
+| 1.5     | July 2025      | Benjamin Evans | Updated LaTeX to Quarto [QMD→HTML & PDF & DOCX]|
+| 1.4     | March 2025     | Benjamin Evans | Adds numerical solutions throughout.     |
+| 1.31    | March 2024     | Benjamin Evans | Adds LoF, LoT, and short captions.       |
+| 1.3     | September 2023 | Benjamin Evans | Adds Node 12 & restructures.             |
+| 1.2     | February 2023  | Benjamin Evans | Adds fully worked examples & minitoc.    |
+| 1.1     | September 2022 | Benjamin Evans | Cleaned for online release.              |
+| 1.0     | September 2021 | Benjamin Evans | Created.                                 |
+: Version history.  
+{#tbl-version-history}
 :::

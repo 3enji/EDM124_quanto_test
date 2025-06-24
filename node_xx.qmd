@@ -1,0 +1,96 @@
+---
+title: "Additional notes / Rough working"
+author: "Benjamin Evans"
+format: 
+  html:
+    includes:
+      in-header: webexercises-deps.html
+editor:
+  markdown:
+    wrap: 72
+  render-on-save: true
+jupyter: false
+---
+
+```{r setup}
+#| echo: false
+library(webexercises)
+```
+
+# Testing ?
+
+::: {.challenge}
+### Quick Quiz
+
+Which of these is used to join datasets in R?
+
+`r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
+
+:::
+
+- What is 1 and this `r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
+- Is this true? Answer: `r webexercises::torf(TRUE)`
+- Is this true? Answer: `r webexercises::torf(FALSE)`
+
+```{r}
+#| echo: false
+opts_p <- c(
+   "the probability that the null hypothesis is true",
+   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
+   "the probability of making an error in your conclusion"
+)
+```
+Test your knowledge:
+`r webexercises::longmcq(opts_p)`
+
+
+::: {.webex-check .webex-box}
+
+I am going to learn a lot: `r torf(TRUE)`
+
+```{r, results='asis', echo = FALSE}
+opts <- c(
+   "the probability that the null hypothesis is true",
+   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
+   "the probability of making an error in your conclusion"
+)
+
+cat("What is a p-value?", longmcq(opts))
+```
+
+:::
+
+
+`r hide("Click here to see the solution")`
+
+```{r, echo = FALSE}
+hist(rnorm(1000))
+```
+
+`r unhide()`
+
+### Fill-In-The-Blanks (`fitb()`)
+
+Create fill-in-the-blank questions using `fitb()`, providing the answer as the first argument.
+
+- 2 + 2 is `r fitb(4)`
+
+::: {.callout-note}
+This is a note callout.
+:::
+
+::: {.callout-warning}
+This is a warning callout
+:::
+
+::: {.callout-important}
+This is an important callout
+:::
+
+::: {.callout-caution}
+This is a caution callout
+:::
+
+::: {.callout-tip}
+This is a tip callout.With a bit of `code`.
+:::

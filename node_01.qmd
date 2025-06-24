@@ -5,6 +5,8 @@ format:
   html:
     includes:
       in-header: webexercises-deps.html
+    # css: webex.css
+    # include-after-body: webex.js
 editor:
   markdown:
     wrap: 72
@@ -14,7 +16,6 @@ jupyter: false
 <!-- [📄 Download PDF version](OV1114-Node-Notes.pdf){.download} -->
 ```{r setup}
 #| echo: false
-# install.packages("webexercises")
 library(webexercises)
 ```
 
@@ -32,7 +33,7 @@ $$
 \begin{aligned}
 a^3   &= 1 \times a \times a \times a \\
 a^1   &= 1 \times a \\
-a^{10} &= 1 \times a \times a \times a \times a \times a \times a \times a \times a \times a \times a
+a^{8} &= 1 \times a \times a \times a \times a \times a \times a \times a \times a
 \end{aligned}
 $$
 
@@ -278,8 +279,8 @@ You need to learn the prefixes shown in @tbl-prefixes.
 
 ## Units
 
-The SI prefixes can be applied to any metric unit, including grams (`g`)
-and metres (`m`). A **kilo**gram is $1000$ or $1\times 10^{3}$
+The SI prefixes can be applied to any metric unit, including grams (g)
+and metres (m). A **kilo**gram is $1000$ or $1\times 10^{3}$
 grams and one **nano** metre is 0.000 000 001 or $1\times 10^{-9}$ metres.
 
 As you can see, it is far easier to use the SI prefixes and standard form when
@@ -388,7 +389,7 @@ including those borrowed from Greek, logic, and physical constants.
 Familiarity with these will not only help with solving problems, but also with 
 interpreting derivations, experimental descriptions, and theoretical explanations.
 
-::: {.scrollable}
+::: {.table-scroll}
 | Symbol       | Meaning                            | Example Use                                      |
 |--------------|-------------------------------------|-------------------------------------------------------------|
 | $\therefore$            | Therefore                          | Logical conclusion: $\; \therefore \; x = 3$                               |
@@ -402,12 +403,12 @@ in the optometric physics module.
 {#tbl-math-symbols}
 :::
 
-::: {.scrollable}
+::: {.table-scroll}
 | Symbol       | Meaning                            | Example Use                       |
 |--------------|-------------------------------------|----------------------------------|
 | $\Delta$            | Change / difference                | $\Delta x = x_2 - x_1$            |
 | $\alpha$            | Alpha (angle)                      | $\alpha = 30^\circ$               |
-| $\beta$            | Beta (angle)                       | $\alpha = 1.32 \; \textrm{rad}$   |
+| $\beta$            | Beta (angle)                       | $\beta = 1.32 \; \textrm{rad}$   |
 | $\lambda$            | Lambda (symbol for wavelength)     | $\lambda = 500\,\textrm{nm}$      |
 | $\Omega$            | Omega (symbol for solid angle)     | $\Omega = 100 \; \textrm{sr}$     |
 | $\phi$            | Phi (angle or flux)                | $\phi_{e} = 2.5 \; \textrm{W}$    |
@@ -449,6 +450,13 @@ A group of biologists decide to travel from their hometown to a neighbouring vil
 1. $\; 1.99 \times 10^{−2} \; \textrm{m/s}$ [or metres per second] (3sf)
 1. $\; 1.07$ miles per day (3sf)
 :::
+
+`r hide("Click here to see the solution")`
+
+1. $\; 1.99 \times 10^{−2} \; \textrm{m/s}$ [or metres per second] (3sf)
+1. $\; 1.07$ miles per day (3sf)
+
+`r unhide()`
 
 ::: {.callout-warning collapse=true title="Working"}
 
@@ -635,47 +643,3 @@ $$
 - **Indices** — [Link (Math Centre)](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-indicespowers-2009-1.pdf) *(also used in OV1115)*
 - **Units & Prefixes** — [Link (NPL)](https://www.npl.co.uk/si-units)
 
-
-
-
-
-
-
-
-# Testing ?
-
-::: {.challenge}
-### Quick Quiz
-
-Which of these is used to join datasets in R?
-
-`r webexercises::mcq(c(answer = 'left_join()', 'merge()', 'rbind()', 'spread()'))`
-
-:::
-
-
-### Fill-In-The-Blanks (`fitb()`)
-
-Create fill-in-the-blank questions using `fitb()`, providing the answer as the first argument.
-
-- 2 + 2 is `r fitb(4)`
-
-::: {.callout-note}
-This is a note callout.
-:::
-
-::: {.callout-warning}
-This is a warning callout
-:::
-
-::: {.callout-important}
-This is an important callout
-:::
-
-::: {.callout-caution}
-This is a caution callout
-:::
-
-::: {.callout-tip}
-This is a tip callout.With a bit of `code`.
-:::

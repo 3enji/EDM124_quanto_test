@@ -1,0 +1,7 @@
+<!-- BE note: not working, would like to centralise here -->
+```{r setup}
+#| echo: false
+# install.packages("webexercises")
+library(webexercises)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```

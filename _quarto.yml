@@ -15,18 +15,19 @@ book:
   reader-mode: true
   chapters:
     - index.qmd
-    - test_02.qmd
+    - node_01.qmd
+    - node_xx.qmd
 
 format:
   html:
     # theme: [darkly, cosmo]
     theme: 
-      light: simplex #cosmo, materia, simplex, flatly,
+      light: cosmo #cosmo, materia, simplex, flatly,
       dark: darkly #darkly, solar, slate
     code-fold: true
     code-tools: true
     toc: true
-    respect-user-color-scheme: true
+    # respect-user-color-scheme: true
     number-sections: true
     equation-numbering: true  # enables auto equation numbers
     fig-cap-location: bottom  # or top
