@@ -1,0 +1,467 @@
+---
+# title: "The Electromagnetic Spectrum"
+author: "Benjamin Evans"
+format: 
+  html:
+    includes:
+      in-header: webexercises-deps.html
+    axe:
+      output: document
+editor:
+  markdown:
+    wrap: 72
+  # render-on-save: true
+jupyter: false
+
+bibliography: references.bib
+#csl: apa.csl # Optional: for formatted output; remove or adjust as needed
+---
+# The Electromagnetic Spectrum {#sec-electromagnetic-spectrum}
+```{r setup}
+#| echo: false
+# install.packages("webexercises")
+library(webexercises)
+```
+
+## Light
+
+Light is the most important physical phenomena in optometry - everything that you will do as an optometrist will involve some kind of light. 
+
+### What is light?
+
+Light is a form of energy or radiation that our eyes can detect. 
+In the late 19th century James Clerk Maxwell showed that electric and magnetic 
+fields travel in the manner of waves and that those waves essentially move at 
+the speed of light. 
+This allowed Maxwell to predict that light itself was carried 
+by electromagnetic waves, which means light is a form of 
+**electromagnetic radiation**. 
+
+These waves transport energy through empty space - there is a propagation of light. All electromagnetic waves are transverse, this means that the two components, the electric and the magnetic component, **oscillate perpendicular to the direction of propagation**. 
+
+Mathematically, electromagnetic radiation is a travelling wave of oscillating electric (E) and magnetic (B) fields: 
+
+$$
+E(x,t) = E_{0} \sin{(kx - \omega t)} 
+$$ {#eq-EMwaveE}
+
+$$
+B(x,t) = B_{0} \sin{(kx - \omega t)} 
+$$ {#eq-EMwaveB}
+
+$$
+E(x,t)/B(x,t) = c 
+$$ {#eq-EMwavec}
+
+
+_Note: You don't need to learn these equations (@eq-EMwaveE, @eq-EMwaveB, and @eq-EMwavec)._ 
+
+::: {.callout-tip title="Definition"}
+In physics, a `field' is a physical quantity, represented by a scalar, vector, or tensor, that has a value for each point in space and time. 
+
+A physical quantity is a physical property of a material or system that can be quantified by measurement and expressed as a algebraic multiplication of a 'Numerical value' and a 'Unit' (for example temperature, wind velocity, or the force an electric charge would experience [used to infer the electric field]).
+:::
+
+::: {.callout-important}
+You are expected to know (& recall from memory) that the speed of light in vacuum $c$ is equal to $3 \times 10^{8} \; \textrm{m/s}$
+:::
+
+### Examples of Scalar and Vector Fields
+
+#### Temperature (Scalar Field)
+Each point in this field has a **scalar value** that we can measure and record at each point in space and time (in this case with units of degrees Celsius). You can find the temperature at any point on this map.
+
+::: {#fig-temp-field .figure}
+
+::: {.content-visible when-format="html"}
+
+<iframe width="100%" height="450"
+src="https://embed.windy.com/embed2.html?lat=51.5&lon=-0.12&zoom=9&overlay=temp"
+frameborder="0"></iframe>
+
+<!-- <iframe src="https://www.ventusky.com/?p=51.5;-0.12;9&l=wind" width="100%" height="450" frameborder="0"></iframe> -->
+:::
+::: {.content-visible unless-format="html"}
+![](images/node02_field_temperature.png){width=80% fig-alt="A temperature field."}
+:::
+
+Temperature field over London (example of a scalar field).
+:::
+
+#### Wind Gust Maximum (Vector Field)
+Each point has both a magnitude (speed) and a direction.
+Each point in this field has a **vector value** (both a magnitude [speed] and a direction) that we can measure and record at each point in space and time.
+
+::: {#fig-temp-field .figure}
+
+::: {.content-visible when-format="html"}
+
+<!-- 
+<iframe width="100%" height="450"
+src="https://embed.windy.com/embed2.html?lat=51.5&lon=-0.12&zoom=9&overlay=gust"
+frameborder="0"></iframe> -->
+
+<iframe src="https://www.ventusky.com/?p=51.4;-0.12;8&l=gust-ac" width="100%" height="450" frameborder="0"></iframe>
+
+:::
+::: {.content-visible unless-format="html"}
+![](images/node02_field_wind.png){width=80% fig-alt="A wind gust field."}
+:::
+
+Wind gust field over London (example of a vector field). You can measure both the magnitude and the direction of the wind at each point on the map at different points in time.
+:::
+
+<!-- ::: {.columns}
+
+::: {.column width="50%"}
+**Temperature**
+<iframe width="100%" height="400" src="https://embed.windy.com/embed2.html?lat=51.5&lon=-0.12&zoom=5&overlay=temp" frameborder="0"></iframe>
+:::
+
+::: {.column width="50%"}
+**Wind**
+<iframe width="100%" height="400" src="https://embed.windy.com/embed2.html?lat=51.5&lon=-0.12&zoom=5&overlay=wind" frameborder="0"></iframe>
+:::
+
+::: -->
+
+## Optics
+
+::: {.callout-tip title="Definition"}
+Optics is study of the behaviour and properties of light, including its interactions with matter.
+:::
+
+The field of optics may be broadly divided into three regimes:
+
+1. Geometrical Optics
+2. Wave Optics
+3. Quantum Optics
+
+### Geometrical Optics
+
+Geometrical Optics is the term used to describe situations where the wavelength of light is very much less than the size of the optical elements in a system. 
+
+_See [Node @sec-refraction], [Node @sec-spherical-lenses], [Node @sec-reflection], and [Node @sec-spherical-mirrors]._
+
+### Wave Optics
+
+Wave Optics refers to situations where the optical elements (such as a slit) are roughly of the same order of magnitude in size as the wavelength of the light incident on them. In wave optics the wave nature of light must be taken into account. 
+
+_See [Node @sec-interference] and [Node @sec-diffraction]._
+
+### Quantum Optics
+
+Quantum Optics deals with the interaction of light with matter on the atomic scale. Here the wavelength of light is very much larger than the dimension of the 
+entities with which it interacts. Quantum optics is used to approach topics such as the photoelectric effect, lasers, and photodetectors.
+
+In optometry one rarely studies quantum optics, primarily due to the fact that it's conceptually challenging, requires advanced mathematics (a common phobia amongst optometrists), and has minimal _practical_ relevance in a clinical setting. Although it is unlikely you will ever encounter the theoretical side of quantum optics during your optometry degree, it is a fascinating subject and the study of quantum optics has led to several key developments and several Nobel prizes awarded in 1997, 2001, 2005 and 2012. For optometric physics we will only be considering geometrical optics and physical optics.
+
+## The Electromagnetic Spectrum
+
+Electromagnetic radiation takes many forms such as radio waves, microwaves, infrared, x-rays, and gamma rays. Sunlight is also a form of electromagnetic energy. Visible light is only a small portion of the electromagnetic spectrum, which contains a broad range of electromagnetic wavelengths. White light is composed of a combination of wavelengths and, as a result, is said to be **polychromatic**. 
+
+Let's look at the different regions of the electromagnetic spectrum in more detail.
+
+![The electromagnetic spectrum from highest energy/shortest wavelength (left) to lowest energy/longest wavelength (right).](images/node02_EMSpectrum.jpg){#fig-electromagnetic-spectrum fig-alt="The electromagnetic spectrum."}
+
+### Gamma rays
+
+Gamma rays can be used in medical treatment applications. They ionise living tissue causing radiation-induced cellular damage, threatening healthy and diseased tissues alike. Gamma rays can kill bacteria and cancer cells and they have been used to treat certain types of cancer. Gamma rays have also been used to sterilise equipment as an alternative to chemical treatments. 
+
+### X-rays
+
+The most familiar use of x-rays is checking for broken bones, but x-rays are also used in other ways, for example, chest x-rays can spot pneumonia. When you have an x-ray you wear a lead apron to protect certain parts of your body. 
+
+### Ultraviolet (UV)
+
+Ultraviolet rays can be used to kill microbes and food and drug companies use ultraviolet lamps to sterilise their products. Suitable doses of ultraviolet rays cause the body to produce vitamin D and this is used by some doctors to treat vitamin D deficiency and some skin disorders. 
+
+### Visible light
+
+The cones in our eyes are receivers for these tiny visible light waves. The sun is a natural source for visible light waves and our eyes see the reflection of this sunlight off the objects around us. Visible light is characterised by having a specific range of wavelengths between ~380nm-740nm.
+
+### Infrared (IR)
+
+Infrared light waves are used to change channels on your tv, also for security lights and for burglar alarms.
+
+### Microwaves
+
+Microwave radiation, high frequency radio-waves, can be used in communications and in microwave ovens to heat food by rotating water molecules (a mechanism known as dipole rotation).
+
+### Radio waves
+
+Naturally occurring radio-waves are made by lightning or by astronomical objects. Artificially generated radio-waves are used for fixed and mobile ratio communication broadcasting, radar and other navigation systems, communication satellites, computer networks and innumerable other applications. 
+
+## Properties of waves {#sec-node02-wave-properties}
+
+There are several properties of a wave that we are particularly interested in.
+
+
+![An annotated 2D wave, showing the amplitude, wavelength, and the direction of travel of the wave.](images/node02_waveProperties.png){#fig-wave-properties fig-alt="Labelled properties of a wave."}
+
+::: {.table-scroll}
+| Quantity      | Symbol       | Description                                                           | Typical Units |
+|---------------|--------------|-----------------------------------------------------------------------|---------------|
+| Speed         | $v$          | Rate of travel of a wave in a certain direction                       | m/s           |
+| Frequency     | $f$          | Number of complete waves generated per second                        | Hz            |
+| Wavelength    | $\lambda$    | Distance from one point on a wave to the same point on the next wave  | m             |
+| Amplitude     | $A$          | Maximum distance from equilibrium to peak or trough                  | m             |
+| Period        | $T$          | Time taken to complete one oscillation (given by $T = f^{-1}$)        | s             |
+: A list of key wave properties.  
+{#tbl-wave-properties}
+:::
+
+::: {.callout-tip title="Definition" fig-alt="Definition: oscillation"}
+An oscillation is periodic variation of some measure about a central value or between two or more different states.
+:::
+
+::: {.callout-important}
+A vibration is a mechanical oscillation. It is imprecise to use the term `vibration' to describe oscillating electric/magnetic fields (EM radiation). 
+:::
+
+<!-- - Speed ($v$) - the rate of travel of a wave in a certain direction
+- Frequency ($f$) - the number of complete waves generated per second [hertz]
+- Wavelength ($\lambda$) - the distance from one point on a wave to the same point   on the successive wave [metres]
+- Amplitude ($A$) - the maximum distance of the wave measured from the line of   equilibrium to the peak or trough of the wave [metres] 
+- Period ($T$) - the time taken to complete one oscillation (given by $f^{-1}$)
+ -->
+
+### Wave (phase) velocity
+
+Wave speed can be measured in the same way as the speed of anything else - speed is equal to distance divided by time:
+
+$$
+\text{Speed} \; [\textrm{m/s}] = \dfrac{\text{distance} \; [\textrm{m}]}{\text{time} \; [\textrm{s}]}
+$$
+or
+$$
+v \; [\textrm{m/s}] = \dfrac{x}{t} 
+\; \left[ \dfrac{\textrm{m}}{\textrm{s}} \right]
+$$  {#eq-speedDistanceTime}
+
+_Note: This is the phase velocity of the wave. In OV1114 we only ever consider the phrase velocity of the wave (group velocities are beyond the scope of the module)._
+
+Wave velocity can also be expressed in terms of the frequency and wavelength of the wave.
+$$
+v = f\lambda
+$$  {#eq-waveEquation}
+Where $v$ is the phase velocity of the wave [m/s], $f$ is the frequency of the wave [Hz or s^-1^], and $\lambda$ is the wavelength of the wave [m].
+
+::: {.callout-note}
+
+### Questions - Wave frequency, wavelength, and velocity calculations
+
+1. Find the wavelength of light travelling in a vacuum, with frequency $5.25 \times 10^{14} \; \textrm{Hz}$
+1. Find the frequency of light travelling in vacuum with wavelength $610\;\textrm{nm}$.
+1. Waves $50 \; \textrm{m}$ in length travel at $0.4 \; \textrm{m/s}$. Calculate the frequency of these waves giving your answer in:
+    a. Hz
+    a. mHz
+1. A ripple tank produces waves with a wavelength of $15 \; \textrm{mm}$. Initially the waves travel at a velocity of $34 \; \textrm{cm/s}$. As the waves move across the ripple tank they move into shallow water and slow down to $12 \; \textrm{cm/s}$.
+    a. Calculate the initial frequency of the waves.
+    a. Assuming the frequency remains constant as the waves slow down, calculate the wavelength of the waves in the shallow water. Give your answer in mm.
+1. A fishing boat uses ultrasound of frequency $6.0 \times 10^{4} \; \textrm{Hz}$ to detect fish directly below. Two echos of the ultrasound are received, one after $0.09 \; \textrm{s}$ coming from a shoal of fish and the other after $0.12 \; \textrm{s}$ coming from the sea bed. The sea bed is $84 \; \textrm{m}$ below the ultrasound transmitted and receiver
+    a. Calculate the speed of the ultrasound waves in water.
+    a. Calculate the wavelength of the ultrasound waves in water.
+    a. Calculate the depth of the shoal of fish below the boat.
+::: 
+
+
+::: {.callout-tip collapse=true title="Numerical solutions"}
+
+1. $\; \lambda = 5.71 \times 10^{-7} \; \textrm{m}$ (3sf) or $\; \lambda = 571 \; \textrm{nm}$ (3sf)
+1. $\; f = 4.92 \times 10^{14} \; \textrm{Hz}$ (3sf) or $\; f = 492 \; \textrm{THz}$ (3sf)
+1. 
+    a. $\; f = 8 \times 10^{-3} \; \textrm{Hz}$
+    a. $\; f = 8 \; \textrm{mHz}$
+1. 
+    a. $\; f_{1} = 22.7 \; \textrm{Hz}$ (3sf)
+    a. $\; \lambda_{2} = 5.29 \; \textrm{mm}$ (3sf)
+1. 
+    a. $\; v = 1,400 \; \textrm{m/s}$
+    a. $\; \lambda = 2.33 \; \textrm{cm}$ (3sf)
+    a. $\; x = 63 \; \textrm{m}$
+
+:::
+
+## Transverse waves
+
+Electromagnetic waves are transverse waves consisting of varying electric and magnetic fields that oscillate perpendicular to the direction of propagation. In general there are not specific directions for the oscillations of the electric and magnetic fields - they oscillate in any randomly orientated plane perpendicular to the direction of propagation of the wave. The sun and many other light sources produce EM waves that have electric fields oscillating in random orientations.
+
+::: {.callout-important title="Check your understanding" .webex-check .webex-box}
+
+```{r, results='asis', echo = FALSE}
+opts_1 <- c(
+  "the magnetic field strength at a point in space",
+  answer = "the speed of light in vacuum",
+  "the maximum frequency of visible light"
+)
+cat("What does the symbol $c$ represent in physics?", longmcq(opts_1))
+
+
+opts_2 <- c(
+  answer = "it has both magnitude and direction at each point in space",
+  "it can only vary over time, not space",
+  "it is always represented by a single numerical value"
+)
+cat("What makes the wind velocity field a vector field?", longmcq(opts_2))
+
+
+opts_3 <- c(
+  "visible light is the only type of electromagnetic wave that exists",
+  "all electromagnetic waves are longitudinal waves",
+  answer = "all electromagnetic waves propagate as transverse waves"
+)
+cat("Which statement about electromagnetic waves is correct?", longmcq(opts_3))
+```
+
+:::
+
+## Fully worked example question
+
+A group of travelling biologists stop to rest at a perfectly spherical pond. One of the biologists takes out a fishing rod and casts a float into the centre of the pond. The float bobs up and down 3.5 times per second creating a series of waves that propagate outwards towards the sides of pond. A second biologist measures the distance between the crest of two waves as being 20 cm. 
+
+1. How fast are the waves travelling?
+1. What is the area of the pond if the waves take 1/3 of a minute to travel from the float to the edge of the pond?
+
+::: {.callout-tip collapse=true title="Numerical solutions"}
+1. $\; 0.7 \; \textrm{m}\,\textrm{s}^{-1}$
+1. $\; 616 \; \textrm{m}^2$ (3sf)
+:::
+
+::: {.callout-warning collapse=true title="Working"}
+
+##### Step 1: Write out values given in the question {.unnumbered}
+
+Write out values given in the question.
+
+We know that the frequency is the number of waves generated per second 
+and the wavelength is the distance from one point on a wave to 
+the same point on the successive wave...
+
+$$
+f = 3.5 \; \textrm{Hz}, 
+\quad \lambda = 20 \; \textrm{cm}, 
+\quad t = \tfrac{1}{3} \; \textrm{min}, 
+\quad v = \;?, 
+\quad A = \;?
+$$
+
+##### Step 2: Convert values to standard units {.unnumbered}
+
+$$
+f = 3.5 \; \textrm{Hz}, 
+\quad \lambda = (20)(1\times10^{-2}) \; \textrm{m}, 
+\quad t = \tfrac{60}{3} \; \textrm{s}, 
+\quad v = \;?, 
+\quad A = \;?
+$$
+
+$$
+f = 3.5 \; \textrm{Hz}, 
+\quad \lambda = 0.20 \; \textrm{m}, 
+\quad t = 20 \; \textrm{s}, 
+\quad v = \;?, 
+\quad A = \;?
+$$
+
+##### Step 3: Identify equations & sub in values {.unnumbered}
+
+For 1a, we want to calculate $v$ and we know that @eq-waveEquation includes $v$ (the value we want to determine), $f$, and $\lambda$ (two values given in the question).
+
+$$
+v = f\lambda
+$$
+Sub in values
+$$
+v = (3.5)(0.20) \quad [\textrm{s}^{-1} \, \textrm{m}]
+$$
+$$
+v = \underline{0.7 \; \textrm{m} \textrm{s}^{-1}}
+$$
+
+##### Step 4: Use the velocity to calculate the area {.unnumbered}
+
+For part 1b, to calculate the area of the pond we can use:
+
+$$
+A = \pi r^{2}
+$$
+
+We don’t know the radius $r$ of the pond, but we can calculate it using the values
+given in the question and @eq-speedDistanceTime:
+
+$$
+v = \dfrac{x}{t}
+$$
+where $x$ is the distance from the centre to the edge of the pond, $v$ is the velocity
+of the waves, and $t$ is the time taken.
+
+Sub in values and rearrange to make $x$ the subject:
+
+$$
+\begin{aligned}
+\rightarrow 0.7 \; [\textrm{m/s}] 
+			&= \dfrac{x}{20} \; \left[ \dfrac{1}{\textrm{s}} \right] \\
+		\rightarrow x 
+			&= (0.7)(20) \; [(\textrm{m/s})(\textrm{s})] \\
+			&= (0.7)(20) \; [\textrm{m}] \\
+			&= \underline{14 \; \textrm{m}}
+\end{aligned}
+$$
+
+We are told that the pond is spherical $\therefore x = r$
+
+$$
+\begin{aligned}
+A 
+	&= \pi r^{2} \\
+	\rightarrow A 
+	&= (\pi)\left(14^{2}\right) 
+	\; {[\textrm{m}]}^{2} 
+	\\
+	&= 196 \pi \; [\textrm{m}^{2} ] 
+  \\
+  &= 615.7521601\ldots \; \textrm{m}^{2}  
+  \\
+  &= \underline{%
+    616 
+    \; \textrm{m}^{2} 
+    \; \; (\textrm{3sf})
+  }
+\end{aligned}
+$$
+
+[
+  The waves travel at 0.7 metres per second and area of the pond is approximately 616 m^2^.
+]{.mark}
+
+:::
+
+## Additional reading
+
+### If feeling less comfortable {.unnumbered}
+
+- **The EM spectrum** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/z32f4qt/revision/1)
+- **Waves** — [Link (BBC)](https://www.bbc.co.uk/bitesize/topics/z2j22nb)
+- **Wave properties** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/zwkn2nb/revision/1)
+
+### If feeling more comfortable {.unnumbered}
+
+- **The EM spectrum** — [Link (Khan Academy)](https://www.khanacademy.org/science/physics/light-waves/introduction-to-light-waves/a/light-and-the-electromagnetic-spectrum)
+- **Waves & properties** — [Link (Khan Academy)](https://www.khanacademy.org/science/high-school-physics/waves-and-sound/introduction-to-waves/v/introduction-to-waves)
+
+<!-- ## Testing with bib file
+
+### If feeling less comfortable {.unnumbered}
+
+- Indices — @bbc_indices
+- Standard form — @bbc_stdform
+- Units & Prefixes — @bbc_units
+- Rounding — @khan_rounding
+
+### If feeling more comfortable {.unnumbered}
+
+- Indices — @mathcentre_indices (also used in OV1115)
+- Units & Prefixes — @npl_units
+
+## References {.unnumbered} -->

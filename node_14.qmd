@@ -1,0 +1,42 @@
+---
+title: "Human Colour Vision"
+author: "Benjamin Evans"
+format: 
+  html:
+    includes:
+      in-header: webexercises-deps.html
+    axe:
+      output: document
+editor:
+  markdown:
+    wrap: 72
+  # render-on-save: true
+jupyter: false
+
+bibliography: references.bib
+#csl: apa.csl # Optional: for formatted output; remove or adjust as needed
+---
+```{r setup}
+#| echo: false
+# install.packages("webexercises")
+library(webexercises)
+```
+
+## First
+
+::: {.callout-tip title="Definition"}
+Optics is study of the behaviour and properties of light, including its interactions with matter.
+:::
+
+## Additional reading
+
+### If feeling less comfortable {.unnumbered}
+
+<!-- - **The EM spectrum** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/z32f4qt/revision/1)
+- **Waves** — [Link (BBC)](https://www.bbc.co.uk/bitesize/topics/z2j22nb)
+- **Wave properties** — [Link (BBC)](https://www.bbc.co.uk/bitesize/guides/zwkn2nb/revision/1) -->
+
+### If feeling more comfortable {.unnumbered}
+
+<!-- - **The EM spectrum** — [Link (Khan Academy)](https://www.khanacademy.org/science/physics/light-waves/introduction-to-light-waves/a/light-and-the-electromagnetic-spectrum)
+- **Waves & properties** — [Link (Khan Academy)](https://www.khanacademy.org/science/high-school-physics/waves-and-sound/introduction-to-waves/v/introduction-to-waves) -->

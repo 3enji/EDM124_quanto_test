@@ -6,7 +6,7 @@
   --highlight: #467AAC;
 }
 
-.webex-check {}
+/* .webex-check {} */
 
 .webex-box {
   border: 2px solid var(--highlight);
@@ -154,35 +154,3 @@ body.sans-serif {
 body {
   transition: font-family 0.2s ease;
 } */
-
-/* Button style (optional customization) */
-#fontToggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  z-index: 999;
-}
-
-/* Table scrolling */
-.table-scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.table-scroll table {
-  min-width: auto; /* 600px or auto, or set to a size that ensures scroll */
-  display: block;
-}
-
-.reveal .callout.callout-style-default div.callout-body {
-  font-size: var(--r-main-font-size);
-}
-
-.callout .callout-title {
-  font-size: 1.25rem !important;   /* Matches h4 in Bootstrap 5 */
-  font-weight: 500 !important;     /* Same as h4 default */
-  line-height: 1.5 !important;     /* Optional: adjust for spacing */
-  margin-bottom: 0.5rem !important; /* Optional: keep spacing under title */
-}

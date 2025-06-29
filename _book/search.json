@@ -42,111 +42,731 @@
   {
     "objectID": "node_01.html",
     "href": "node_01.html",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "",
-    "text": "1.1 Indices\nIndices are introduced in the Quantitative Methods for Optometry module (OV1115) and are used extensively in the Optometric Physics (OV1114) module.\nThe term \\(a^{b}\\) represents the number \\(a\\) being multiplied by itself \\(b\\) times.\n\\[\n\\begin{aligned}\na^3   &= 1 \\times a \\times a \\times a \\\\\na^1   &= 1 \\times a \\\\\na^{8} &= 1 \\times a \\times a \\times a \\times a \\times a \\times a \\times a \\times a\n\\end{aligned}\n\\]\nRules of indices:\n\\[\na^p \\times a^q = a^{p+q}\n\\tag{1.1}\\]\n\\[\na^p \\div a^q = a^{p - q}\n\\tag{1.2}\\]\n\\[\n(a^p)^q = a^{p \\cdot q}\n\\tag{1.3}\\]\n\\[\na^{-p} = \\frac{1}{a^p}\n\\tag{1.4}\\]\n\\[\na^0 = 1\n\\tag{1.5}\\]\n\\[\na^{1/p} = \\sqrt[p]{a}\n\\tag{1.6}\\]\n\\[\na^{p/q} = \\sqrt[q]{a^p}\n\\quad \\text{or} \\quad\n\\left( \\sqrt[q]{a} \\right)^p\n\\tag{1.7}\\]\nWhen using a computer it is not always possible to use the same symbols and notations as when writing by hand. The following alternative notation is used instead:\n\\(a^{3} =\\) 1*a*a*a\nTherefore our rules of indices would be written (or typed) as:\nNote the use of an asterisk (*) to represent multiplication, which avoids confusion with the letter \\(x\\), and a forward slash (/) to indicate division.\nA central dot (\\(\\cdot\\)) is also sometimes used to denote multiplication in mathematical typesetting (\\(a \\cdot b\\) means the same as \\(a \\ast b\\)).\n\\[\na \\cdot b\n\\equiv\na \\ast b\n\\]",
+    "text": "1.1 Indices\nIndices are introduced in the Quantitative Methods for Optometry module (OV1115) and are used extensively in the Optometric Physics (OV1114) module.\nThe term \\(a^{b}\\) represents the number \\(a\\) being multiplied by itself \\(b\\) times.\n\\[\n\\begin{aligned}\na^3   &= 1 \\times a \\times a \\times a \\\\\na^1   &= 1 \\times a \\\\\na^{8} &= 1 \\times a \\times a \\times a \\times a \\times a \\times a \\times a \\times a\n\\end{aligned}\n\\]\nRules of indices:\n\\[\na^p \\times a^q = a^{p+q}\n\\tag{1.1}\\]\n\\[\na^p \\div a^q = a^{p - q}\n\\tag{1.2}\\]\n\\[\n(a^p)^q = a^{p \\cdot q}\n\\tag{1.3}\\]\n\\[\na^{-p} = \\frac{1}{a^p}\n\\tag{1.4}\\]\n\\[\na^0 = 1\n\\tag{1.5}\\]\n\\[\na^{1/p} = \\sqrt[p]{a}\n\\tag{1.6}\\]\n\\[\na^{p/q} = \\sqrt[q]{a^p}\n\\quad \\text{or} \\quad\n\\left( \\sqrt[q]{a} \\right)^p\n\\tag{1.7}\\]\nWhen using a computer it is not always possible to use the same symbols and notations as when writing by hand. The following alternative notation is used instead:\n\\(a^{3} =\\) 1*a*a*a\nTherefore our rules of indices would be written (or typed) as:\nNote the use of an asterisk (*) to represent multiplication, which avoids confusion with the letter \\(x\\), and a forward slash (/) to indicate division.\nA central dot (\\(\\cdot\\)) is also sometimes used to denote multiplication in mathematical typesetting (\\(a \\cdot b\\) means the same as \\(a \\ast b\\)).\n\\[\na \\cdot b\n\\equiv\na \\ast b\n\\equiv\na \\times b\n\\]\nNote: this is the only time we ever use the division symbol \\((\\div)\\) in this module. For clarity, division will typically be represented using a forward slash (/) or a fraction, e.g., \\(1/2\\) or \\(\\frac{1}{2}\\).",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#indices",
     "href": "node_01.html#indices",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "",
-    "text": "Figure 1.1: Indices include a base and a power/index/exponent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThese rules can be applied to all rational exponents\n\n\n\n\n\n\n\n\n\n\nRule\nCode Notation\n\n\n\n\nEquation 1.1\n(a^p)*(a^q) = a^(p+q)\n\n\nEquation 1.2\n(a^p)/(a^q) = a^(p−q)\n\n\nEquation 1.3\n(a^p)^q = a^(p*q)\n\n\nEquation 1.4\na^(-p) = 1/(a^p)\n\n\nEquation 1.5\na^0 = 1\n\n\nEquation 1.6\na^(1/p) = sqrt[p](a)\n\n\nEquation 1.7\na^(p/q) = sqrt[q](a^p)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nBe careful not to confuse the central dot with the decimal point, which sits on the baseline, as in \\(3.14\\). For example: \\[\n    2.5 \\cdot 3.4 = 8.5\n\\]\n\n\n\n\n\n\n\n\nNote\n\n\n\nTest your knowledge!\n2.5 \\(\\cdot\\) 4 =  \n\n\n\n1.1.1 Questions - Indices\n\n\n\n\n\n\\(\\; 2x^{3} \\times 3x^{2}\\)\n\n\\(\\; 4p^{3} \\div 2p\\)\n\n\\(\\; {(p^{3})}^{2} \\div p^{4}\\)\n\n\\(\\; (x^{0}+y^{0}) \\div (2z^{0})\\)\n\n\n\n\\(\\; 21a^{3}b^{2} \\div 7ab^{4}\\)\n\n\\(\\; 25^{\\frac{1}{2}}\\)\n\n\\(\\; {(-5)}^{-3}\\)\n\n\n\n\n\n\n\n\n\nShow solutions\n\n\n\n\n\n\n\n\n\\(6x^{5}\\)\n\n\\(2p^{2}\\)\n\n\\(p^{2}\\)\n\n\\(1\\)\n\n\n\n\\(3a^{2}b^{-2}\\)\n\n\\(5\\)\n\n\\(\\frac{1}{(-125)}\\)\n\n\n\n\n\n\nNote: this is the only time we ever use the division symbol \\((\\div)\\) in this module. For clarity, division will typically be represented using a forward slash (/) or a fraction, e.g., \\(1/2\\) or \\(\\frac{1}{2}\\).",
+    "text": "Figure 1.1: Indices include a base and a power/index/exponent.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThese rules can be applied to all rational exponents\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabel\nEquation\nCode Notation\n\n\n\n\nEquation 1.1\n\\(a^p \\times a^q = a^{p+q}\\)\n(a^p)*(a^q) = a^(p+q)\n\n\nEquation 1.2\n\\(a^p \\div a^q = a^{p - q}\\)\n(a^p)/(a^q) = a^(p−q)\n\n\nEquation 1.3\n\\((a^p)^q = a^{p \\cdot q}\\)\n(a^p)^q = a^(p*q)\n\n\nEquation 1.4\n\\(a^{-p} = \\frac{1}{a^p}\\)\na^(-p) = 1/(a^p)\n\n\nEquation 1.5\n\\(a^0 = 1\\)\na^0 = 1\n\n\nEquation 1.6\n\\(a^{1/p} = \\sqrt[p]{a}\\)\na^(1/p) = sqrt[p](a)\n\n\nEquation 1.7\n\\(a^{p/q} = \\sqrt[q]{a^p}\\)\na^(p/q) = sqrt[q](a^p)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nBe careful not to confuse the central dot with the decimal point, which sits on the baseline, as in \\(3.14\\). For example: \\[\n    2.5 \\cdot 3.4 = 8.5\n\\]\n\n\n\n\n\n\n\n\nCheck your understanding\n\n\n\n2.5 \\(\\cdot\\) 5 = \nWhen you simplify \\(a^3 \\times a^4\\), you:\n\n add the bases and multiply the exponents keep the base the same and add the exponents multiply the bases and exponents together\n\n\n\n\n\n\n\n\n\nQuestions - Indices\n\n\n\n\n\n\n\\(\\; 2x^{3} \\times 3x^{2}\\)\n\n\\(\\; 4p^{3} \\div 2p\\)\n\n\\(\\; {(p^{3})}^{2} \\div p^{4}\\)\n\n\\(\\; (x^{0}+y^{0}) \\div (2z^{0})\\)\n\\(\\; 21a^{3}b^{2} \\div 7ab^{4}\\)\n\n\\(\\; 25^{\\frac{1}{2}}\\)\n\n\\(\\; {(-5)}^{-3}\\)\n\n\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\n\n\\(6x^{5}\\)\n\n\\(2p^{2}\\)\n\n\\(p^{2}\\)\n\n\\(1\\)\n\n\n\n\\(3a^{2}b^{-2}\\)\n\n\\(5\\)\n\n\\(\\frac{1}{(-125)}\\)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#standard-form",
     "href": "node_01.html#standard-form",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.2 Standard form",
-    "text": "1.2 Standard form\nStandard form may be used to express any decimal number and it is commonly used to express very large and very small numbers. In standard form, numbers are written as\n\\[\na \\times 10^{n}\n\\]\nwhere \\(1 \\leq a &lt; 10\\) and \\(n\\) is an integer (a whole number). For example, \\[\\begin{align*}\n    3.57 \\times 10^{4} & = (3.57) \\times (10^{4}) \\\\\n    3.57 \\times 10^{4} & = (3.57) \\times (10,000) \\\\\n    3.57 \\times 10^{4} & = 35,700\n\\end{align*}\\]\nOr, as entered into a computer: 3.57*10^(4) = 35,700\nIn many computer systems superscript exponents \\(\\left(10^{4}\\right)\\) can be inconvenient to display. As such, scientific notation is written using E notation. This is where En (or sometimes lowercase e) represents “times 10 raised to the power \\(n\\)”. Mathematically: \\[\na\\textrm{E}\\,n \\equiv a \\times 10^{n}\n\\]\nFor example, \\[\n    \\texttt{3.57E4} \\equiv 3.57 * 10^4\n\\] \\[\n    \\texttt{9.1E-31} \\equiv 9.1 \\times 10^{-31}\n\\] \\[\n    \\texttt{1.055e-34} \\equiv 1.055 \\times 10^{-34}\n\\] So if, when using a computer, if you see text such as, 3.02e+2 or 3.02E+2 know that it is equivalent to \\(3.02 \\times 10^{2}.\\)\nThis E notation is used to represent large or small numbers more efficiently in computations and data storage. This notation is also referred to as scientific notation in software such as Microsoft Excel.",
+    "text": "1.2 Standard form\nStandard form may be used to express any decimal number and it is commonly used to express very large and very small numbers. In standard form, numbers are written as\n\\[\na \\times 10^{n}\n\\]\nwhere \\(1 \\leq a &lt; 10\\) and \\(n\\) is an integer (a whole number). For example, \\[\\begin{align*}\n    3.57 \\times 10^{4} & = (3.57) \\times (10^{4}) \\\\\n    3.57 \\times 10^{4} & = (3.57) \\times (10,000) \\\\\n    3.57 \\times 10^{4} & = 35,700\n\\end{align*}\\]\nOr, as entered into a computer: 3.57*10^(4) = 35,700\nIn many computer systems superscript exponents \\(\\left(10^{4}\\right)\\) can be inconvenient to display. As such, scientific notation is written using E notation. This is where E (or sometimes lowercase e) represents “times 10 raised to the power”. Mathematically: \\[\na\\textrm{E}\\,n \\equiv a \\times 10^{n}\n\\]\nFor example, \\[\n    \\texttt{3.57E4} \\equiv 3.57 \\times 10^4\n\\] \\[\n    \\texttt{9.1E-31} \\equiv 9.1 \\times 10^{-31}\n\\] \\[\n    \\texttt{1.055e-34} \\equiv 1.055 \\times 10^{-34}\n\\] So when working on a computer, if you come across text like 3.02e+2 or 3.02E+2, understand that it means \\(3.02 \\times 10^{2}\\). Likewise, 1.60E-19 is the same as \\(1.60 \\times 10^{-19}\\).\nThis E notation is used to represent large or small numbers more efficiently in computations and data storage. This notation is also referred to as scientific notation in software such as Microsoft Excel.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#si-prefixes",
     "href": "node_01.html#si-prefixes",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.3 SI prefixes",
     "text": "1.3 SI prefixes\nSI prefixes are metric prefixes that were standardised for use in the\nInternational System of Units (SI) (from the French name: Système International d’unités).\nYou may be familiar with some of these prefixes from units such as\ncentimetres, millimetres, kilometres, gigabytes, and nanometres.\n\n1.3.1 Table: SI Prefixes\n\n\n\n\nTable 1.1: A list of key SI prefixes used in the optometric physics module.\n\n\n\n\n\n\nPrefix\nSymbol\nDecimal\nPower of 10\n\n\n\n\ntera\nT\n1,000,000,000,000\n1012\n\n\ngiga\nG\n1,000,000,000\n109\n\n\nmega\nM\n1,000,000\n106\n\n\nkilo\nk\n1,000\n103\n\n\n–\n–\n1\n100\n\n\ndeci\nd\n0.1\n10-1\n\n\ncenti\nc\n0.01\n10-2\n\n\nmilli\nm\n0.001\n10-3\n\n\nmicro\nμ\n0.000001\n10-6\n\n\nnano\nn\n0.000000001\n10-9\n\n\npico\np\n0.000000000001\n10-12\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou need to learn the prefixes shown in Table 1.1.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#units",
     "href": "node_01.html#units",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.4 Units",
-    "text": "1.4 Units\nThe SI prefixes can be applied to any metric unit, including grams (g) and metres (m). A kilogram is \\(1000\\) or \\(1\\times 10^{3}\\) grams and one nano metre is 0.000 000 001 or \\(1\\times 10^{-9}\\) metres.\nAs you can see, it is far easier to use the SI prefixes and standard form when working with very large and very small values!\nMany optometric physics problems require some form of unit conversion and it’s important to ensure that you are able to convert between the units and prefixes shown in Table 1.1.\n\n1.4.1 Questions - Unit Conversions\n\nConvert 600nm into metres\n\nConvert 38μm into nanometres (nm)\nConvert 2.2GHz to Hz\nCalculate 3.4cm \\(\\times\\) 2.1mm giving your answer in m2\nConvert your answer to the previous question to cm2\n\n\n\n\n\n\n\nShow solutions\n\n\n\n\n\n\n\\(\\; 6.00 \\times 10^{-7} \\; \\textrm{m}\\) (3sf)\n\n\\(\\; 3.8 \\times 10^{4} \\; \\textrm{nm}\\) or \\(38,000 \\textrm{nm}\\)\n\\(\\; 2.2 \\times 10^{9} \\; \\textrm{Hz}\\)\n\n\\(\\; 7.14 \\times 10^{-5} \\; \\textrm{m}^{2}\\)\n\n\\(\\; 7.14 \\times 10^{-1} \\; \\textrm{cm}^{2}\\)",
+    "text": "1.4 Units\nThe SI prefixes can be applied to any metric unit, including grams (g) and metres (m). A kilogram is \\(1000\\) or \\(1\\times 10^{3}\\) grams and one nano metre is 0.000 000 001 or \\(1\\times 10^{-9}\\) metres.\nAs you can see, it is far easier to use the SI prefixes and standard form when working with very large and very small values!\nMany optometric physics problems require some form of unit conversion and it’s important to ensure that you are able to convert between the units and prefixes shown in Table 1.1.\n\n\n\n\n\n\nCheck your understanding\n\n\n\nWhat does 3.2E+5 mean?\n\n 5 * 10^3.2 3.2 × 10^5 320,000\n\nWhich is true?\n\n a nanometre is 1000 times smaller than a micrometre a micrometre is 1000 times smaller than a nanometre a micrometre and a nanometre are the same size\n\n\n\n\n\n\n\n\n\nQuestions - Unit Conversions\n\n\n\n\nConvert 600nm into metres\n\nConvert 38μm into nanometres (nm)\nConvert 2.2GHz to Hz\nCalculate 3.4cm \\(\\times\\) 2.1mm giving your answer in m2\nConvert your answer to the previous question to cm2\n\n\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; 6.00 \\times 10^{-7} \\; \\textrm{m}\\) (3sf)\n\n\\(\\; 3.8 \\times 10^{4} \\; \\textrm{nm}\\) or \\(38,000 \\textrm{nm}\\)\n\\(\\; 2.2 \\times 10^{9} \\; \\textrm{Hz}\\)\n\n\\(\\; 7.14 \\times 10^{-5} \\; \\textrm{m}^{2}\\)\n\n\\(\\; 7.14 \\times 10^{-1} \\; \\textrm{cm}^{2}\\)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#rounding-and-significant-figures",
     "href": "node_01.html#rounding-and-significant-figures",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.5 Rounding and significant figures",
-    "text": "1.5 Rounding and significant figures\nYou will be expected to know how to round to a given number of decimal places or significant figures. In the optometric physics module the standard rules for rounding apply:\n\nIf the digit to be dropped is greater or equal to 5, the last retained digit is increased by one\nIf the digit to be dropped is less than 5, the last remaining digit is left as it is\n\n\n1.5.1 What is a significant figure?\nA significant figure (often abbreviated to s.f.) is any digit in a number that carries meaningful information about its precision. Significant figures are a way of expressing the level of accuracy behind a measurement.\nThe number of significant figures in a result is the number of figures that are known with some degree of reliability. For example, the number 13.2 is said to have 3 significant figures (1, 3, and 2) and the number 13.20 is said to have 4 significant figures (1, 3, 2, and 0). Note that any zero after the first significant digit is significant.\n\n\n1.5.2 Rules for significant figures\nThere are several rules used to determine which digits are significant:\n\nAll nonzero digits are significant (1,2,3,4,5,6,7,8, and 9)\nZeroes between nonzero digits are significant (e.g., the zeros in 403, 30004, and 20.02 are significant)\nZeroes to the left of the first nonzero digits are not significant; such zeros merely indicate the position of the decimal point (e.g., the zeros in 0.03 and 0.0042 are not significant)\nZeroes to the right of a decimal point in a number are significant (e.g. the zeros in 38.00 are significant)\n\n\n\n\n\n\n\nWarning\n\n\n\nNote that trailing zeros in a whole number without a decimal point are not necessarily significant.\n\n\nA value of 100 could have one, two, or three significant figures depending on how it’s measured or written (e.g., 100.0 would have four significant figures, while 100 may have only one, if it’s an estimate or if the instrument you are using only measures to the nearest 100).\n\n\n1.5.3 Examples\n\n1.234 g has 4 significant figures\n3.0002 kg has 5 significant figures\n0.001\\(^\\circ\\)C has 1 significant figure\n0.200g has 3 significant figures\n\\(5.060 \\times 10^{4}\\) (\\(\\equiv\\) 50,600) has 4 significant figures\n5.67E+12 (\\(\\equiv\\) 5,670,000,000,000) has 3 significant figures\n\n\n\n\n\n\n\nTip\n\n\n\nIf not specified in the question give your answer in full and then round your answer to 3 significant figures on the line below.\n\n\n\n\n1.5.4 Questions - Rounding\n\nRound \\(4.312728302\\) to four significant figures\nRound \\(6.0067343\\times 10^{-4}\\) to three significant figures\n\n\n\n\n\n\n\nShow solutions\n\n\n\n\n\n\n\\(\\; 4.313\\) (4sf)\n\n\\(\\; 6.01 \\times 10^{-4}\\) (3sf)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIn OV1114, we never round to fewer than 3 significant figures, and rounding should only be done at the final step of a calculation. Use full precision throughout multi-step problems. For example, if step 1 gives 2.54832, do not round to 2.54 before step 2 — continue using the full value.",
+    "text": "1.5 Rounding and significant figures\nYou will be expected to know how to round to a given number of decimal places or significant figures. In the optometric physics module the standard rules for rounding apply:\n\nIf the digit to be dropped is greater or equal to 5, the last retained digit is increased by one\nIf the digit to be dropped is less than 5, the last remaining digit is left as it is\n\n\n1.5.1 What is a significant figure?\nA significant figure (often abbreviated to s.f.) is any digit in a number that carries meaningful information about its precision. Significant figures are a way of expressing the level of accuracy behind a measurement.\nThe number of significant figures in a result is the number of figures that are known with some degree of reliability. For example, the number 13.2 is said to have 3 significant figures (1, 3, and 2) and the number 13.20 is said to have 4 significant figures (1, 3, 2, and 0). Note that any zero after the first significant digit is significant.\n\n\n1.5.2 Rules for significant figures\nThere are several rules used to determine which digits are significant:\n\nAll nonzero digits are significant (1,2,3,4,5,6,7,8, and 9)\nZeroes between nonzero digits are significant (e.g., the zeros in 403, 30004, and 20.02 are significant)\nZeroes to the left of the first nonzero digits are not significant; such zeros merely indicate the position of the decimal point (e.g., the zeros in 0.03 and 0.0042 are not significant)\nZeroes to the right of a decimal point in a number are significant (e.g. the zeros in 38.00 are significant)\n\n\n\n\n\n\n\nWarning\n\n\n\nNote that trailing zeros in a whole number without a decimal point are not necessarily significant.\n\n\nA value of 100 could have one, two, or three significant figures depending on how it’s measured or written (e.g., 100.0 would have four significant figures, while 100 may have only one, if it’s an estimate or if the instrument you are using only measures to the nearest 100).\n\n\n1.5.3 Examples\n\n1.234 g has 4 significant figures\n3.0002 kg has 5 significant figures\n0.001\\(^\\circ\\)C has 1 significant figure\n0.200g has 3 significant figures\n\\(5.060 \\times 10^{4}\\) (\\(\\equiv\\) 50,600) has 4 significant figures\n5.67E+12 (\\(\\equiv\\) 5,670,000,000,000) has 3 significant figures\n\nIf not specified in the question give your answer in full and then round your answer to 3 significant figures on the line below.\n\n\n\n\n\n\nQuestions - Rounding\n\n\n\n\nRound \\(4.312728302\\) to four significant figures\nRound \\(6.0067343\\times 10^{-4}\\) to three significant figures\n\n\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; 4.313\\) (4sf)\n\n\\(\\; 6.01 \\times 10^{-4}\\) (3sf)\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nIn OV1114, we never round to fewer than 3 significant figures, and rounding should only be done at the final step of a calculation. Use full precision throughout multi-step problems. For example, if step 1 gives 2.54832, do not round to 2.54 before step 2 — continue using the full value.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#mathematical-symbols-used-throughout-the-module",
     "href": "node_01.html#mathematical-symbols-used-throughout-the-module",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.6 Mathematical symbols used throughout the module",
     "text": "1.6 Mathematical symbols used throughout the module\nMathematics and physics make extensive use of symbolic notation to express concepts precisely and efficiently. These symbols act as a kind of shorthand — allowing us to communicate complex ideas in a compact form that is easy to manipulate in equations and mathematical working.\nYou’ll encounter a number of standard symbols throughout this module, including those borrowed from Greek, logic, and physical constants. Familiarity with these will not only help with solving problems, but also with interpreting derivations, experimental descriptions, and theoretical explanations.\n\n\n\n\nTable 1.2: A list of commonly used mathematical symbols and their contextual meanings in the optometric physics module.\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nMeaning\nExample Use\n\n\n\n\n\\(\\therefore\\)\nTherefore\nLogical conclusion: \\(\\; \\therefore \\; x = 3\\)\n\n\n\\(\\because\\)\nBecause\nLogical premise: \\(\\; \\because \\; x^2 = 9\\)\n\n\n=\nEquals\nExact equality: \\(x = 2\\)\n\n\n\\(\\approx\\)\nApproximately equal to\nEstimation: \\(\\pi \\approx 3.14\\)\n\n\n\\(\\equiv\\)\nIdentically equal to\nIdentities: \\(\\sin^2 x + \\cos^2 x \\equiv 1\\)\n\n\n\\(\\propto\\)\nProportional to\n\\(F \\propto a\\)\n\n\n\n\n\n\n\n\n\n\n\nTable 1.3: Common Greek letters used to represent angles, constants, and physical quantities throughout the module.\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nMeaning\nExample Use\n\n\n\n\n\\(\\Delta\\)\nChange / difference\n\\(\\Delta x = x_2 - x_1\\)\n\n\n\\(\\alpha\\)\nAlpha (angle)\n\\(\\alpha = 30^\\circ\\)\n\n\n\\(\\beta\\)\nBeta (angle)\n\\(\\beta = 1.32 \\; \\textrm{rad}\\)\n\n\n\\(\\lambda\\)\nLambda (symbol for wavelength)\n\\(\\lambda = 500\\,\\textrm{nm}\\)\n\n\n\\(\\Omega\\)\nOmega (symbol for solid angle)\n\\(\\Omega = 100 \\; \\textrm{sr}\\)\n\n\n\\(\\phi\\)\nPhi (angle or flux)\n\\(\\phi_{e} = 2.5 \\; \\textrm{W}\\)\n\n\n\\(\\pi\\)\nPi (mathematical constant)\n\\(\\pi = 3.14159\\ldots\\)\n\n\n\\(\\psi\\)\nPsi (wavefunction)\n\\(\\psi(x, t) = \\cos{(2x+t)}\\)\n\n\n\\(\\theta\\)\nTheta (angle)\n\\(\\theta = 45^\\circ\\)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#bonus-questions",
     "href": "node_01.html#bonus-questions",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.7 Bonus Questions",
-    "text": "1.7 Bonus Questions\n\n1.7.1 Questions - Bonus\nNote: for all of the questions below give your answer in standard form.\n\nConvert 43 nm into metres\nConvert 18 km into nm\nConvert 48 nm2 into cm2\n\n\n\n\n\n\n\nShow solutions\n\n\n\n\n\n\n\\(\\; 4.3 \\times 10^{-8} \\; \\textrm{m}\\)\n\\(\\; 1.8 \\times 10^{13} \\; \\textrm{nm}\\)\n\\(\\; 4.8 \\times 10^{-13} \\; \\textrm{cm}^{2}\\)",
+    "text": "1.7 Bonus Questions\n\n\n\n\n\n\nQuestions - Bonus\n\n\n\nNote: for all of the questions below give your answer in standard form.\n\nConvert 43 nm into metres\nConvert 18 km into nm\nConvert 48 nm2 into cm2\n\n\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; 4.3 \\times 10^{-8} \\; \\textrm{m}\\)\n\\(\\; 1.8 \\times 10^{13} \\; \\textrm{nm}\\)\n\\(\\; 4.8 \\times 10^{-13} \\; \\textrm{cm}^{2}\\)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#fully-worked-example-question",
     "href": "node_01.html#fully-worked-example-question",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.8 Fully worked example question",
-    "text": "1.8 Fully worked example question\n\nA group of biologists decide to travel from their hometown to a neighbouring village at an average speed of 120 furlongs per fortnight (1 furlong = 201 metres = 1/8 mile).\n\nWhat was their average speed in metres per second?\nOn average how many miles did the group cover each day?\n\n\n\n\n\n\n\nNumerical Solutions\n\n\n\n\n\n\n\\(\\; 1.99 \\times 10^{−2} \\; \\textrm{m/s}\\) [or metres per second] (3sf)\n\\(\\; 1.07\\) miles per day (3sf)\n\n\n\n\n\n\nClick here to see the solution\n\n\n\\(\\; 1.99 \\times 10^{−2} \\; \\textrm{m/s}\\) [or metres per second] (3sf)\n\\(\\; 1.07\\) miles per day (3sf)\n\n\n\n\n\n\n\n\nWorking\n\n\n\n\n\nWith any question the first step is to identify and write out the values given in the question…\n\nStep 1: Write out values given in the question\n\\[\n\\begin{aligned}\nv\n         & = 120 \\; \\textrm{furlongs per fortnight}\n        \\\\\n         & = 120 \\; \\textrm{furlongs/fortnight}\n        \\\\\n         & = 120 \\; \\textrm{(furlongs)}(\\textrm{fortnight}^{-1})\n\\end{aligned}\n\\]\n\n\nStep 2: Convert furlongs to metres and miles\nWe are told that\n\\[\n1 \\; \\textrm{furlong} = 201 \\; \\textrm{metres}\n\\tag{1.8}\\] \\[\n1 \\; \\textrm{furlong} = 0.125 \\;\\textrm{miles}\n\\tag{1.9}\\]\nUsing Equation 1.8, if 1 furlong = 201 metres…\n\\[\n\\begin{aligned}\n\\rightarrow 120 \\; \\textrm{furlongs}\n  & = 120 \\times 201 \\; \\textrm{metres}                                                                 \\\\\n  & = 24,120 \\; \\textrm{metres}              \\\\\n  & = 2.412 \\times 10^{4} \\; \\textrm{metres}\n  % \\\\ (&= 24.12 \\; \\textrm{kilometres} )%\\;\\; (or 24 kilometres))\n\\end{aligned}\n\\]\nUsing Equation 1.9, if 1 furlong = 0.125 miles…\n\\[\n\\begin{aligned}\n\\rightarrow 120 \\; \\textrm{furlongs}\n  & = 120 \\times 0.125 \\; \\textrm{miles} \\\\\n  & = 15 \\; \\textrm{miles}\n\\end{aligned}\n\\]\n\\[\n\\therefore\n\\] \\[\n\\begin{aligned}\n120 \\; \\textrm{furlongs per fortnight}\n  & = 2.412 \\times 10^{4} \\; \\textrm{metres per fortnight} \\\\\n  & = 15 \\; \\textrm{miles per fortnight}\n\\end{aligned}\n\\]\nRecall from Table 1.2 that \\(\\therefore\\) is a shorthand way of writing ‘therefore’.\n\n\nStep 3: Convert `per fortnight’ to per hour and per day\nWe know that\n\\[\n\\begin{aligned}\n1 \\; \\textrm{fortnight} & = 2 \\; \\textrm{weeks}                                          \\\\\n  1 \\; \\textrm{week}      & = 7 \\; \\textrm{days}                                           \\\\\n  1 \\; \\textrm{day}       & = 24 \\; \\textrm{hours}                                         \\\\\n  1 \\; \\textrm{hour}      & = 60 \\; \\textrm{minutes}                                       \\\\\n  1 \\; \\textrm{minute}    & = 60 \\; \\textrm{seconds}                                       \\\\\n\\end{aligned}\n\\] \\[\n\\therefore\n\\] \\[\n\\begin{aligned}\n1 \\; \\textrm{fortnight} & = 2 \\; \\textrm{weeks}                                          \\\\\n                        & = 2 \\times 7 \\; \\textrm{days}                                  \\\\\n                        & = 2 \\times 7 \\times 24 \\; \\textrm{hours}                       \\\\\n                        & = 2 \\times 7 \\times 24 \\times 60 \\; \\textrm{minutes}           \\\\\n                        & = 2 \\times 7 \\times 24 \\times 60 \\times 60 \\; \\textrm{seconds} \\\\\n1 \\; \\textrm{fortnight} & = 14 \\; \\textrm{days}                                          \\\\\n                        & = 336 \\; \\textrm{hours}                                        \\\\\n                        & = 20,160 \\; \\textrm{minutes}                                   \\\\\n                        & = 1,209,600 \\; \\textrm{seconds}\n\\end{aligned}\n\\]\nWe also know that `per’ fortnight is equivalent to fortnight\\(^{-1}\\)\n\\[\n\\begin{aligned}\n1 \\; \\textrm{per fortnight}\n  &= 14^{-1} \\; \\textrm{per day}\n  \\quad\n  \\left(\n    \\text{or} \\; \\;\n    \\dfrac{1}{14} \\; \\; \\textrm{per day}\n  \\right) \\\\\n  & = 336^{-1} \\; \\textrm{per hour} \\nonumber      \\\\\n  & = 20,160^{-1} \\; \\textrm{per minute}    \\nonumber \\\\\n  & = 1,209,600^{-1} \\; \\textrm{per second}\n\\end{aligned}\n\\]\n\\[\n\\rightarrow\n1 \\; \\textrm{per fortnight} = 14^{-1} \\; \\textrm{per day}\n\\tag{1.10}\\] \\[\n\\rightarrow\n1 \\; \\textrm{per fortnight} = 1,209,600^{-1} \\; \\textrm{per second}\n\\tag{1.11}\\]\n\n\nStep 4: Convert metres per fortnight to metres per second using Equation 1.11\n\\[\n\\begin{aligned}\n1 \\; \\textrm{m/fortnight}\n  & = {(1,209,600)}^{-1}\n    \\; \\textrm{m/s} \\\\\n2.412 \\times 10^{4} \\; \\textrm{m/fortnight}\n  & = 2.412 \\times 10^{4} \\times {(1,209,600)}^{-1}\n    \\; \\textrm{m/s} \\\\\n  & = \\left(\n    \\dfrac{2.412 \\times 10^{4}}{1.2096 \\times 10^{6}}\n    \\right)\n    \\; \\textrm{m/s} \\\\\n  & = 1.9940476\\ldots \\times 10^{-2}\n    \\; \\textrm{m/s} \\\\\n  & = \\underline{1.99 \\times 10^{-2} \\; \\textrm{m/s} \\; \\; (\\textrm{3sf})}\n\\end{aligned}\n\\]\nUnderlining your final answer can make it easier to check for mistakes when you review your working.\n\n\nStep 5: Convert miles per fortnight to miles per day using Equation 1.10\n\\[\n\\begin{aligned}\n1 \\; \\textrm{mile per fortnight}\n    & = {(14)}^{-1} \\; \\textrm{miles per day}\n  \\\\\n  \\rightarrow 15 \\; \\textrm{miles per fortnight}\n    & = 15 \\times {(14)}^{-1} \\; \\textrm{miles per day}\n  \\\\\n    & = \\left( \\dfrac{15}{14} \\right) \\; \\textrm{miles per day}\n  \\\\\n    & = 1.071428571\\dots \\; \\textrm{miles per day}\n  \\\\\n    & = \\underline{1.07 \\; \\textrm{miles per day} \\; \\; (\\textrm{3sf})}\n\\end{aligned}\n\\]\nThe group covers, on average, approximately 1.07 miles every day and they move at an average speed of approximately \\(1.99 \\times 10^{-2}\\) ms-1.",
+    "text": "1.8 Fully worked example question\n\nA group of biologists decide to travel from their hometown to a neighbouring village at an average speed of 120 furlongs per fortnight (1 furlong = 201 metres = 1/8 mile).\n\nWhat was their average speed in metres per second?\nOn average how many miles did the group cover each day?\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; 1.99 \\times 10^{−2} \\; \\textrm{m/s}\\) [or metres per second] (3sf)\n\\(\\; 1.07\\) miles per day (3sf)\n\n\n\n\n\n\n\n\n\n\n\nWorking\n\n\n\n\n\nWith any question the first step is to identify and write out the values given in the question…\n\nStep 1: Write out values given in the question\n\\[\n\\begin{aligned}\nv\n         & = 120 \\; \\textrm{furlongs per fortnight}\n        \\\\\n         & = 120 \\; \\textrm{furlongs/fortnight}\n        \\\\\n         & = 120 \\; \\textrm{(furlongs)}(\\textrm{fortnight}^{-1})\n\\end{aligned}\n\\]\n\n\nStep 2: Convert furlongs to metres and miles\nWe are told that\n\\[\n1 \\; \\textrm{furlong} = 201 \\; \\textrm{metres}\n\\tag{1.8}\\] \\[\n1 \\; \\textrm{furlong} = 0.125 \\;\\textrm{miles}\n\\tag{1.9}\\]\nUsing Equation 1.8, if 1 furlong = 201 metres…\n\\[\n\\begin{aligned}\n\\rightarrow 120 \\; \\textrm{furlongs}\n  & = 120 \\times 201 \\; \\textrm{metres}                                                                 \\\\\n  & = 24,120 \\; \\textrm{metres}              \\\\\n  & = 2.412 \\times 10^{4} \\; \\textrm{metres}\n  % \\\\ (&= 24.12 \\; \\textrm{kilometres} )%\\;\\; (or 24 kilometres))\n\\end{aligned}\n\\]\nUsing Equation 1.9, if 1 furlong = 0.125 miles…\n\\[\n\\begin{aligned}\n\\rightarrow 120 \\; \\textrm{furlongs}\n  & = 120 \\times 0.125 \\; \\textrm{miles} \\\\\n  & = 15 \\; \\textrm{miles}\n\\end{aligned}\n\\]\n\\[\n\\therefore\n\\] \\[\n\\begin{aligned}\n120 \\; \\textrm{furlongs per fortnight}\n  & = 2.412 \\times 10^{4} \\; \\textrm{metres per fortnight} \\\\\n  & = 15 \\; \\textrm{miles per fortnight}\n\\end{aligned}\n\\]\nRecall from Table 1.2 that \\(\\therefore\\) is a shorthand way of writing ‘therefore’.\n\n\nStep 3: Convert `per fortnight’ to per hour and per day\nWe know that\n\\[\n\\begin{aligned}\n1 \\; \\textrm{fortnight} & = 2 \\; \\textrm{weeks}                                          \\\\\n  1 \\; \\textrm{week}      & = 7 \\; \\textrm{days}                                           \\\\\n  1 \\; \\textrm{day}       & = 24 \\; \\textrm{hours}                                         \\\\\n  1 \\; \\textrm{hour}      & = 60 \\; \\textrm{minutes}                                       \\\\\n  1 \\; \\textrm{minute}    & = 60 \\; \\textrm{seconds}                                       \\\\\n\\end{aligned}\n\\] \\[\n\\therefore\n\\] \\[\n\\begin{aligned}\n1 \\; \\textrm{fortnight} & = 2 \\; \\textrm{weeks}                                          \\\\\n                        & = 2 \\times 7 \\; \\textrm{days}                                  \\\\\n                        & = 2 \\times 7 \\times 24 \\; \\textrm{hours}                       \\\\\n                        & = 2 \\times 7 \\times 24 \\times 60 \\; \\textrm{minutes}           \\\\\n                        & = 2 \\times 7 \\times 24 \\times 60 \\times 60 \\; \\textrm{seconds} \\\\\n1 \\; \\textrm{fortnight} & = 14 \\; \\textrm{days}                                          \\\\\n                        & = 336 \\; \\textrm{hours}                                        \\\\\n                        & = 20,160 \\; \\textrm{minutes}                                   \\\\\n                        & = 1,209,600 \\; \\textrm{seconds}\n\\end{aligned}\n\\]\nWe also know that `per’ fortnight is equivalent to fortnight\\(^{-1}\\)\n\\[\n\\begin{aligned}\n1 \\; \\textrm{per fortnight}\n  &= 14^{-1} \\; \\textrm{per day}\n  \\quad\n  \\left(\n    \\text{or} \\; \\;\n    \\dfrac{1}{14} \\; \\; \\textrm{per day}\n  \\right) \\\\\n  & = 336^{-1} \\; \\textrm{per hour} \\nonumber      \\\\\n  & = 20,160^{-1} \\; \\textrm{per minute}    \\nonumber \\\\\n  & = 1,209,600^{-1} \\; \\textrm{per second}\n\\end{aligned}\n\\]\n\\[\n\\rightarrow\n1 \\; \\textrm{per fortnight} = 14^{-1} \\; \\textrm{per day}\n\\tag{1.10}\\] \\[\n\\rightarrow\n1 \\; \\textrm{per fortnight} = 1,209,600^{-1} \\; \\textrm{per second}\n\\tag{1.11}\\]\n\n\nStep 4: Convert metres per fortnight to metres per second using Equation 1.11\n\\[\n\\begin{aligned}\n1 \\; \\textrm{m/fortnight}\n  & = {(1,209,600)}^{-1}\n    \\; \\textrm{m/s} \\\\\n2.412 \\times 10^{4} \\; \\textrm{m/fortnight}\n  & = 2.412 \\times 10^{4} \\times {(1,209,600)}^{-1}\n    \\; \\textrm{m/s} \\\\\n  & = \\left(\n    \\dfrac{2.412 \\times 10^{4}}{1.2096 \\times 10^{6}}\n    \\right)\n    \\; \\textrm{m/s} \\\\\n  & = 1.9940476\\ldots \\times 10^{-2}\n    \\; \\textrm{m/s} \\\\\n  & = \\underline{1.99 \\times 10^{-2} \\; \\textrm{m/s} \\; \\; (\\textrm{3sf})}\n\\end{aligned}\n\\]\nUnderlining your final answer can make it easier to check for mistakes when you review your working.\n\n\nStep 5: Convert miles per fortnight to miles per day using Equation 1.10\n\\[\n\\begin{aligned}\n1 \\; \\textrm{mile per fortnight}\n    & = {(14)}^{-1} \\; \\textrm{miles per day}\n  \\\\\n  \\rightarrow 15 \\; \\textrm{miles per fortnight}\n    & = 15 \\times {(14)}^{-1} \\; \\textrm{miles per day}\n  \\\\\n    & = \\left( \\dfrac{15}{14} \\right) \\; \\textrm{miles per day}\n  \\\\\n    & = 1.071428571\\dots \\; \\textrm{miles per day}\n  \\\\\n    & = \\underline{1.07 \\; \\textrm{miles per day} \\; \\; (\\textrm{3sf})}\n\\end{aligned}\n\\]\nThe group covers, on average, approximately 1.07 miles every day and they move at an average speed of approximately \\(1.99 \\times 10^{-2}\\) ms-1.\n\n\n\n\n\n\n\n\n\n\n\nCheck your understanding\n\n\n\nWhen converting from furlongs per fortnight to metres per second (or between any two velocity units), you:\n\n Divide distance by time to get average speed Multiply distance by time to get average speed Divide distance by time to get average speed and convert the units for distance and time",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
     ]
   },
   {
     "objectID": "node_01.html#additional-reading",
     "href": "node_01.html#additional-reading",
-    "title": "1  Node 01 - Basic Mathematical Techniques",
+    "title": "1  Basic Mathematical Techniques",
     "section": "1.9 Additional reading",
     "text": "1.9 Additional reading\n\nIf feeling less comfortable\n\nIndices — Link (BBC)\nStandard form — Link (BBC)\nUnits & Prefixes — Link (BBC)\nRounding — Link (Khan Academy)\n\n\n\nIf feeling more comfortable\n\nIndices — Link (Math Centre) (also used in OV1115)\nUnits & Prefixes — Link (NPL)",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Node 01 - Basic Mathematical Techniques</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Mathematical Techniques</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html",
+    "href": "node_02.html",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "",
+    "text": "2.1 Light\nLight is the most important physical phenomena in optometry - everything that you will do as an optometrist will involve some kind of light.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#light",
+    "href": "node_02.html#light",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "",
+    "text": "2.1.1 What is light?\nLight is a form of energy or radiation that our eyes can detect. In the late 19th century James Clerk Maxwell showed that electric and magnetic fields travel in the manner of waves and that those waves essentially move at the speed of light. This allowed Maxwell to predict that light itself was carried by electromagnetic waves, which means light is a form of electromagnetic radiation.\nThese waves transport energy through empty space - there is a propagation of light. All electromagnetic waves are transverse, this means that the two components, the electric and the magnetic component, oscillate perpendicular to the direction of propagation.\nMathematically, electromagnetic radiation is a travelling wave of oscillating electric (E) and magnetic (B) fields:\n\\[\nE(x,t) = E_{0} \\sin{(kx - \\omega t)}\n\\tag{2.1}\\]\n\\[\nB(x,t) = B_{0} \\sin{(kx - \\omega t)}\n\\tag{2.2}\\]\n\\[\nE(x,t)/B(x,t) = c\n\\tag{2.3}\\]\nNote: You don’t need to learn these equations (Equation 2.1, Equation 2.2, and Equation 2.3).\n\n\n\n\n\n\nDefinition\n\n\n\nIn physics, a `field’ is a physical quantity, represented by a scalar, vector, or tensor, that has a value for each point in space and time.\nA physical quantity is a physical property of a material or system that can be quantified by measurement and expressed as a algebraic multiplication of a ‘Numerical value’ and a ‘Unit’ (for example temperature, wind velocity, or the force an electric charge would experience [used to infer the electric field]).\n\n\n\n\n\n\n\n\nImportant\n\n\n\nYou are expected to know (& recall from memory) that the speed of light in vacuum \\(c\\) is equal to \\(3 \\times 10^{8} \\; \\textrm{m/s}\\)\n\n\n\n\n2.1.2 Examples of Scalar and Vector Fields\n\n2.1.2.1 Temperature (Scalar Field)\nEach point in this field has a scalar value that we can measure and record at each point in space and time (in this case with units of degrees Celsius). You can find the temperature at any point on this map.\n\n\n\n\n\n\n\n\nFigure 2.1: Temperature field over London (example of a scalar field).\n\n\n\n\n\n2.1.2.2 Wind Gust Maximum (Vector Field)\nEach point has both a magnitude (speed) and a direction. Each point in this field has a vector value (both a magnitude [speed] and a direction) that we can measure and record at each point in space and time.\n\n\n\n\n\n\n\n\nFigure 2.2: Wind gust field over London (example of a vector field). You can measure both the magnitude and the direction of the wind at each point on the map at different points in time.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#optics",
+    "href": "node_02.html#optics",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.2 Optics",
+    "text": "2.2 Optics\n\n\n\n\n\n\nDefinition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.\n\n\nThe field of optics may be broadly divided into three regimes:\n\nGeometrical Optics\nWave Optics\nQuantum Optics\n\n\n2.2.1 Geometrical Optics\nGeometrical Optics is the term used to describe situations where the wavelength of light is very much less than the size of the optical elements in a system.\nSee Node 4, Node 5, Node 6, and Node 7.\n\n\n2.2.2 Wave Optics\nWave Optics refers to situations where the optical elements (such as a slit) are roughly of the same order of magnitude in size as the wavelength of the light incident on them. In wave optics the wave nature of light must be taken into account.\nSee Node 8 and Node 9.\n\n\n2.2.3 Quantum Optics\nQuantum Optics deals with the interaction of light with matter on the atomic scale. Here the wavelength of light is very much larger than the dimension of the entities with which it interacts. Quantum optics is used to approach topics such as the photoelectric effect, lasers, and photodetectors.\nIn optometry one rarely studies quantum optics, primarily due to the fact that it’s conceptually challenging, requires advanced mathematics (a common phobia amongst optometrists), and has minimal practical relevance in a clinical setting. Although it is unlikely you will ever encounter the theoretical side of quantum optics during your optometry degree, it is a fascinating subject and the study of quantum optics has led to several key developments and several Nobel prizes awarded in 1997, 2001, 2005 and 2012. For optometric physics we will only be considering geometrical optics and physical optics.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#the-electromagnetic-spectrum",
+    "href": "node_02.html#the-electromagnetic-spectrum",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.3 The Electromagnetic Spectrum",
+    "text": "2.3 The Electromagnetic Spectrum\nElectromagnetic radiation takes many forms such as radio waves, microwaves, infrared, x-rays, and gamma rays. Sunlight is also a form of electromagnetic energy. Visible light is only a small portion of the electromagnetic spectrum, which contains a broad range of electromagnetic wavelengths. White light is composed of a combination of wavelengths and, as a result, is said to be polychromatic.\nLet’s look at the different regions of the electromagnetic spectrum in more detail.\n\n\n\n\n\n\nFigure 2.3: The electromagnetic spectrum from highest energy/shortest wavelength (left) to lowest energy/longest wavelength (right).\n\n\n\n\n2.3.1 Gamma rays\nGamma rays can be used in medical treatment applications. They ionise living tissue causing radiation-induced cellular damage, threatening healthy and diseased tissues alike. Gamma rays can kill bacteria and cancer cells and they have been used to treat certain types of cancer. Gamma rays have also been used to sterilise equipment as an alternative to chemical treatments.\n\n\n2.3.2 X-rays\nThe most familiar use of x-rays is checking for broken bones, but x-rays are also used in other ways, for example, chest x-rays can spot pneumonia. When you have an x-ray you wear a lead apron to protect certain parts of your body.\n\n\n2.3.3 Ultraviolet (UV)\nUltraviolet rays can be used to kill microbes and food and drug companies use ultraviolet lamps to sterilise their products. Suitable doses of ultraviolet rays cause the body to produce vitamin D and this is used by some doctors to treat vitamin D deficiency and some skin disorders.\n\n\n2.3.4 Visible light\nThe cones in our eyes are receivers for these tiny visible light waves. The sun is a natural source for visible light waves and our eyes see the reflection of this sunlight off the objects around us. Visible light is characterised by having a specific range of wavelengths between ~380nm-740nm.\n\n\n2.3.5 Infrared (IR)\nInfrared light waves are used to change channels on your tv, also for security lights and for burglar alarms.\n\n\n2.3.6 Microwaves\nMicrowave radiation, high frequency radio-waves, can be used in communications and in microwave ovens to heat food by rotating water molecules (a mechanism known as dipole rotation).\n\n\n2.3.7 Radio waves\nNaturally occurring radio-waves are made by lightning or by astronomical objects. Artificially generated radio-waves are used for fixed and mobile ratio communication broadcasting, radar and other navigation systems, communication satellites, computer networks and innumerable other applications.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#sec-node02-wave-properties",
+    "href": "node_02.html#sec-node02-wave-properties",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.4 Properties of waves",
+    "text": "2.4 Properties of waves\nThere are several properties of a wave that we are particularly interested in.\n\n\n\n\n\n\nFigure 2.4: An annotated 2D wave, showing the amplitude, wavelength, and the direction of travel of the wave.\n\n\n\n\n\n\n\nTable 2.1: A list of key wave properties.\n\n\n\n\n\n\n\n\n\n\n\n\nQuantity\nSymbol\nDescription\nTypical Units\n\n\n\n\nSpeed\n\\(v\\)\nRate of travel of a wave in a certain direction\nm/s\n\n\nFrequency\n\\(f\\)\nNumber of complete waves generated per second\nHz\n\n\nWavelength\n\\(\\lambda\\)\nDistance from one point on a wave to the same point on the next wave\nm\n\n\nAmplitude\n\\(A\\)\nMaximum distance from equilibrium to peak or trough\nm\n\n\nPeriod\n\\(T\\)\nTime taken to complete one oscillation (given by \\(T = f^{-1}\\))\ns\n\n\n\n\n\n\n\n\n\n\n\n\n\nDefinition\n\n\n\nAn oscillation is periodic variation of some measure about a central value or between two or more different states.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nA vibration is a mechanical oscillation. It is imprecise to use the term `vibration’ to describe oscillating electric/magnetic fields (EM radiation).\n\n\n\n\n2.4.1 Wave (phase) velocity\nWave speed can be measured in the same way as the speed of anything else - speed is equal to distance divided by time:\n\\[\n\\text{Speed} \\; [\\textrm{m/s}] = \\dfrac{\\text{distance} \\; [\\textrm{m}]}{\\text{time} \\; [\\textrm{s}]}\n\\] or \\[\nv \\; [\\textrm{m/s}] = \\dfrac{x}{t}\n\\; \\left[ \\dfrac{\\textrm{m}}{\\textrm{s}} \\right]\n\\tag{2.4}\\]\nNote: This is the phase velocity of the wave. In OV1114 we only ever consider the phrase velocity of the wave (group velocities are beyond the scope of the module).\nWave velocity can also be expressed in terms of the frequency and wavelength of the wave. \\[\nv = f\\lambda\n\\tag{2.5}\\] Where \\(v\\) is the phase velocity of the wave [m/s], \\(f\\) is the frequency of the wave [Hz or s-1], and \\(\\lambda\\) is the wavelength of the wave [m].\n\n\n\n\n\n\nQuestions - Wave frequency, wavelength, and velocity calculations\n\n\n\n\nFind the wavelength of light travelling in a vacuum, with frequency \\(5.25 \\times 10^{14} \\; \\textrm{Hz}\\)\nFind the frequency of light travelling in vacuum with wavelength \\(610\\;\\textrm{nm}\\).\nWaves \\(50 \\; \\textrm{m}\\) in length travel at \\(0.4 \\; \\textrm{m/s}\\). Calculate the frequency of these waves giving your answer in:\n\nHz\nmHz\n\nA ripple tank produces waves with a wavelength of \\(15 \\; \\textrm{mm}\\). Initially the waves travel at a velocity of \\(34 \\; \\textrm{cm/s}\\). As the waves move across the ripple tank they move into shallow water and slow down to \\(12 \\; \\textrm{cm/s}\\).\n\nCalculate the initial frequency of the waves.\nAssuming the frequency remains constant as the waves slow down, calculate the wavelength of the waves in the shallow water. Give your answer in mm.\n\nA fishing boat uses ultrasound of frequency \\(6.0 \\times 10^{4} \\; \\textrm{Hz}\\) to detect fish directly below. Two echos of the ultrasound are received, one after \\(0.09 \\; \\textrm{s}\\) coming from a shoal of fish and the other after \\(0.12 \\; \\textrm{s}\\) coming from the sea bed. The sea bed is \\(84 \\; \\textrm{m}\\) below the ultrasound transmitted and receiver\n\nCalculate the speed of the ultrasound waves in water.\nCalculate the wavelength of the ultrasound waves in water.\nCalculate the depth of the shoal of fish below the boat.\n\n\n\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; \\lambda = 5.71 \\times 10^{-7} \\; \\textrm{m}\\) (3sf) or \\(\\; \\lambda = 571 \\; \\textrm{nm}\\) (3sf)\n\\(\\; f = 4.92 \\times 10^{14} \\; \\textrm{Hz}\\) (3sf) or \\(\\; f = 492 \\; \\textrm{THz}\\) (3sf)\n\n\\(\\; f = 8 \\times 10^{-3} \\; \\textrm{Hz}\\)\n\\(\\; f = 8 \\; \\textrm{mHz}\\)\n\n\n\\(\\; f_{1} = 22.7 \\; \\textrm{Hz}\\) (3sf)\n\\(\\; \\lambda_{2} = 5.29 \\; \\textrm{mm}\\) (3sf)\n\n\n\\(\\; v = 1,400 \\; \\textrm{m/s}\\)\n\\(\\; \\lambda = 2.33 \\; \\textrm{cm}\\) (3sf)\n\\(\\; x = 63 \\; \\textrm{m}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#transverse-waves",
+    "href": "node_02.html#transverse-waves",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.5 Transverse waves",
+    "text": "2.5 Transverse waves\nElectromagnetic waves are transverse waves consisting of varying electric and magnetic fields that oscillate perpendicular to the direction of propagation. In general there are not specific directions for the oscillations of the electric and magnetic fields - they oscillate in any randomly orientated plane perpendicular to the direction of propagation of the wave. The sun and many other light sources produce EM waves that have electric fields oscillating in random orientations.\n\n\n\n\n\n\nCheck your understanding\n\n\n\nWhat does the symbol \\(c\\) represent in physics?\n\n the magnetic field strength at a point in space the speed of light in vacuum the maximum frequency of visible light\n\nWhat makes the wind velocity field a vector field?\n\n it has both magnitude and direction at each point in space it can only vary over time, not space it is always represented by a single numerical value\n\nWhich statement about electromagnetic waves is correct?\n\n visible light is the only type of electromagnetic wave that exists all electromagnetic waves are longitudinal waves all electromagnetic waves propagate as transverse waves",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#fully-worked-example-question",
+    "href": "node_02.html#fully-worked-example-question",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.6 Fully worked example question",
+    "text": "2.6 Fully worked example question\nA group of travelling biologists stop to rest at a perfectly spherical pond. One of the biologists takes out a fishing rod and casts a float into the centre of the pond. The float bobs up and down 3.5 times per second creating a series of waves that propagate outwards towards the sides of pond. A second biologist measures the distance between the crest of two waves as being 20 cm.\n\nHow fast are the waves travelling?\nWhat is the area of the pond if the waves take 1/3 of a minute to travel from the float to the edge of the pond?\n\n\n\n\n\n\n\nNumerical solutions\n\n\n\n\n\n\n\\(\\; 0.7 \\; \\textrm{m}\\,\\textrm{s}^{-1}\\)\n\\(\\; 616 \\; \\textrm{m}^2\\) (3sf)\n\n\n\n\n\n\n\n\n\n\nWorking\n\n\n\n\n\n\nStep 1: Write out values given in the question\nWrite out values given in the question.\nWe know that the frequency is the number of waves generated per second and the wavelength is the distance from one point on a wave to the same point on the successive wave…\n\\[\nf = 3.5 \\; \\textrm{Hz},\n\\quad \\lambda = 20 \\; \\textrm{cm},\n\\quad t = \\tfrac{1}{3} \\; \\textrm{min},\n\\quad v = \\;?,\n\\quad A = \\;?\n\\]\n\n\nStep 2: Convert values to standard units\n\\[\nf = 3.5 \\; \\textrm{Hz},\n\\quad \\lambda = (20)(1\\times10^{-2}) \\; \\textrm{m},\n\\quad t = \\tfrac{60}{3} \\; \\textrm{s},\n\\quad v = \\;?,\n\\quad A = \\;?\n\\]\n\\[\nf = 3.5 \\; \\textrm{Hz},\n\\quad \\lambda = 0.20 \\; \\textrm{m},\n\\quad t = 20 \\; \\textrm{s},\n\\quad v = \\;?,\n\\quad A = \\;?\n\\]\n\n\nStep 3: Identify equations & sub in values\nFor 1a, we want to calculate \\(v\\) and we know that Equation 2.5 includes \\(v\\) (the value we want to determine), \\(f\\), and \\(\\lambda\\) (two values given in the question).\n\\[\nv = f\\lambda\n\\] Sub in values \\[\nv = (3.5)(0.20) \\quad [\\textrm{s}^{-1} \\, \\textrm{m}]\n\\] \\[\nv = \\underline{0.7 \\; \\textrm{m} \\textrm{s}^{-1}}\n\\]\n\n\nStep 4: Use the velocity to calculate the area\nFor part 1b, to calculate the area of the pond we can use:\n\\[\nA = \\pi r^{2}\n\\]\nWe don’t know the radius \\(r\\) of the pond, but we can calculate it using the values given in the question and Equation 2.4:\n\\[\nv = \\dfrac{x}{t}\n\\] where \\(x\\) is the distance from the centre to the edge of the pond, \\(v\\) is the velocity of the waves, and \\(t\\) is the time taken.\nSub in values and rearrange to make \\(x\\) the subject:\n\\[\n\\begin{aligned}\n\\rightarrow 0.7 \\; [\\textrm{m/s}]\n            &= \\dfrac{x}{20} \\; \\left[ \\dfrac{1}{\\textrm{s}} \\right] \\\\\n        \\rightarrow x\n            &= (0.7)(20) \\; [(\\textrm{m/s})(\\textrm{s})] \\\\\n            &= (0.7)(20) \\; [\\textrm{m}] \\\\\n            &= \\underline{14 \\; \\textrm{m}}\n\\end{aligned}\n\\]\nWe are told that the pond is spherical \\(\\therefore x = r\\)\n\\[\n\\begin{aligned}\nA\n    &= \\pi r^{2} \\\\\n    \\rightarrow A\n    &= (\\pi)\\left(14^{2}\\right)\n    \\; {[\\textrm{m}]}^{2}\n    \\\\\n    &= 196 \\pi \\; [\\textrm{m}^{2} ]\n  \\\\\n  &= 615.7521601\\ldots \\; \\textrm{m}^{2}  \n  \\\\\n  &= \\underline{%\n    616\n    \\; \\textrm{m}^{2}\n    \\; \\; (\\textrm{3sf})\n  }\n\\end{aligned}\n\\]\nThe waves travel at 0.7 metres per second and area of the pond is approximately 616 m2.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_02.html#additional-reading",
+    "href": "node_02.html#additional-reading",
+    "title": "2  The Electromagnetic Spectrum",
+    "section": "2.7 Additional reading",
+    "text": "2.7 Additional reading\n\nIf feeling less comfortable\n\nThe EM spectrum — Link (BBC)\nWaves — Link (BBC)\nWave properties — Link (BBC)\n\n\n\nIf feeling more comfortable\n\nThe EM spectrum — Link (Khan Academy)\nWaves & properties — Link (Khan Academy)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Electromagnetic Spectrum</span>"
+    ]
+  },
+  {
+    "objectID": "node_03.html",
+    "href": "node_03.html",
+    "title": "3  Polarisation",
+    "section": "",
+    "text": "3.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Polarisation</span>"
+    ]
+  },
+  {
+    "objectID": "node_03.html#first",
+    "href": "node_03.html#first",
+    "title": "3  Polarisation",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Polarisation</span>"
+    ]
+  },
+  {
+    "objectID": "node_03.html#additional-reading",
+    "href": "node_03.html#additional-reading",
+    "title": "3  Polarisation",
+    "section": "3.2 Additional reading",
+    "text": "3.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Polarisation</span>"
+    ]
+  },
+  {
+    "objectID": "node_04.html",
+    "href": "node_04.html",
+    "title": "4  Refraction",
+    "section": "",
+    "text": "4.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_04.html#first",
+    "href": "node_04.html#first",
+    "title": "4  Refraction",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_04.html#additional-reading",
+    "href": "node_04.html#additional-reading",
+    "title": "4  Refraction",
+    "section": "4.2 Additional reading",
+    "text": "4.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Refraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_05.html",
+    "href": "node_05.html",
+    "title": "5  Spherical Lenses",
+    "section": "",
+    "text": "5.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Spherical Lenses</span>"
+    ]
+  },
+  {
+    "objectID": "node_05.html#first",
+    "href": "node_05.html#first",
+    "title": "5  Spherical Lenses",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Spherical Lenses</span>"
+    ]
+  },
+  {
+    "objectID": "node_05.html#additional-reading",
+    "href": "node_05.html#additional-reading",
+    "title": "5  Spherical Lenses",
+    "section": "5.2 Additional reading",
+    "text": "5.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Spherical Lenses</span>"
+    ]
+  },
+  {
+    "objectID": "node_06.html",
+    "href": "node_06.html",
+    "title": "6  Reflection",
+    "section": "",
+    "text": "6.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Reflection</span>"
+    ]
+  },
+  {
+    "objectID": "node_06.html#first",
+    "href": "node_06.html#first",
+    "title": "6  Reflection",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Reflection</span>"
+    ]
+  },
+  {
+    "objectID": "node_06.html#additional-reading",
+    "href": "node_06.html#additional-reading",
+    "title": "6  Reflection",
+    "section": "6.2 Additional reading",
+    "text": "6.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Reflection</span>"
+    ]
+  },
+  {
+    "objectID": "node_07.html",
+    "href": "node_07.html",
+    "title": "7  Spherical Mirrors",
+    "section": "",
+    "text": "7.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spherical Mirrors</span>"
+    ]
+  },
+  {
+    "objectID": "node_07.html#first",
+    "href": "node_07.html#first",
+    "title": "7  Spherical Mirrors",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spherical Mirrors</span>"
+    ]
+  },
+  {
+    "objectID": "node_07.html#additional-reading",
+    "href": "node_07.html#additional-reading",
+    "title": "7  Spherical Mirrors",
+    "section": "7.2 Additional reading",
+    "text": "7.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Spherical Mirrors</span>"
+    ]
+  },
+  {
+    "objectID": "node_08.html",
+    "href": "node_08.html",
+    "title": "8  Interference",
+    "section": "",
+    "text": "8.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Interference</span>"
+    ]
+  },
+  {
+    "objectID": "node_08.html#first",
+    "href": "node_08.html#first",
+    "title": "8  Interference",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Interference</span>"
+    ]
+  },
+  {
+    "objectID": "node_08.html#additional-reading",
+    "href": "node_08.html#additional-reading",
+    "title": "8  Interference",
+    "section": "8.2 Additional reading",
+    "text": "8.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Interference</span>"
+    ]
+  },
+  {
+    "objectID": "node_09.html",
+    "href": "node_09.html",
+    "title": "9  Diffraction",
+    "section": "",
+    "text": "9.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Diffraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_09.html#first",
+    "href": "node_09.html#first",
+    "title": "9  Diffraction",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Diffraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_09.html#additional-reading",
+    "href": "node_09.html#additional-reading",
+    "title": "9  Diffraction",
+    "section": "9.2 Additional reading",
+    "text": "9.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Diffraction</span>"
+    ]
+  },
+  {
+    "objectID": "node_10.html",
+    "href": "node_10.html",
+    "title": "10  Aberrations",
+    "section": "",
+    "text": "10.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Aberrations</span>"
+    ]
+  },
+  {
+    "objectID": "node_10.html#first",
+    "href": "node_10.html#first",
+    "title": "10  Aberrations",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Aberrations</span>"
+    ]
+  },
+  {
+    "objectID": "node_10.html#additional-reading",
+    "href": "node_10.html#additional-reading",
+    "title": "10  Aberrations",
+    "section": "10.2 Additional reading",
+    "text": "10.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Aberrations</span>"
+    ]
+  },
+  {
+    "objectID": "node_11.html",
+    "href": "node_11.html",
+    "title": "11  Physics of the Eye",
+    "section": "",
+    "text": "11.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Physics of the Eye</span>"
+    ]
+  },
+  {
+    "objectID": "node_11.html#first",
+    "href": "node_11.html#first",
+    "title": "11  Physics of the Eye",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Physics of the Eye</span>"
+    ]
+  },
+  {
+    "objectID": "node_11.html#additional-reading",
+    "href": "node_11.html#additional-reading",
+    "title": "11  Physics of the Eye",
+    "section": "11.2 Additional reading",
+    "text": "11.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Physics of the Eye</span>"
+    ]
+  },
+  {
+    "objectID": "node_12.html",
+    "href": "node_12.html",
+    "title": "12  Colour",
+    "section": "",
+    "text": "12.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Colour</span>"
+    ]
+  },
+  {
+    "objectID": "node_12.html#first",
+    "href": "node_12.html#first",
+    "title": "12  Colour",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Colour</span>"
+    ]
+  },
+  {
+    "objectID": "node_12.html#additional-reading",
+    "href": "node_12.html#additional-reading",
+    "title": "12  Colour",
+    "section": "12.2 Additional reading",
+    "text": "12.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Colour</span>"
+    ]
+  },
+  {
+    "objectID": "node_13.html",
+    "href": "node_13.html",
+    "title": "13  Colour Measurement",
+    "section": "",
+    "text": "13.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Colour Measurement</span>"
+    ]
+  },
+  {
+    "objectID": "node_13.html#first",
+    "href": "node_13.html#first",
+    "title": "13  Colour Measurement",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Colour Measurement</span>"
+    ]
+  },
+  {
+    "objectID": "node_13.html#additional-reading",
+    "href": "node_13.html#additional-reading",
+    "title": "13  Colour Measurement",
+    "section": "13.2 Additional reading",
+    "text": "13.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Colour Measurement</span>"
+    ]
+  },
+  {
+    "objectID": "node_14.html",
+    "href": "node_14.html",
+    "title": "14  Human Colour Vision",
+    "section": "",
+    "text": "14.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Human Colour Vision</span>"
+    ]
+  },
+  {
+    "objectID": "node_14.html#first",
+    "href": "node_14.html#first",
+    "title": "14  Human Colour Vision",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Human Colour Vision</span>"
+    ]
+  },
+  {
+    "objectID": "node_14.html#additional-reading",
+    "href": "node_14.html#additional-reading",
+    "title": "14  Human Colour Vision",
+    "section": "14.2 Additional reading",
+    "text": "14.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Human Colour Vision</span>"
+    ]
+  },
+  {
+    "objectID": "node_15.html",
+    "href": "node_15.html",
+    "title": "15  Colour Vision Deficiency",
+    "section": "",
+    "text": "15.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Colour Vision Deficiency</span>"
+    ]
+  },
+  {
+    "objectID": "node_15.html#first",
+    "href": "node_15.html#first",
+    "title": "15  Colour Vision Deficiency",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Colour Vision Deficiency</span>"
+    ]
+  },
+  {
+    "objectID": "node_15.html#additional-reading",
+    "href": "node_15.html#additional-reading",
+    "title": "15  Colour Vision Deficiency",
+    "section": "15.2 Additional reading",
+    "text": "15.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Colour Vision Deficiency</span>"
+    ]
+  },
+  {
+    "objectID": "node_16.html",
+    "href": "node_16.html",
+    "title": "16  Colour Vision Assessment",
+    "section": "",
+    "text": "16.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Colour Vision Assessment</span>"
+    ]
+  },
+  {
+    "objectID": "node_16.html#first",
+    "href": "node_16.html#first",
+    "title": "16  Colour Vision Assessment",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Colour Vision Assessment</span>"
+    ]
+  },
+  {
+    "objectID": "node_16.html#additional-reading",
+    "href": "node_16.html#additional-reading",
+    "title": "16  Colour Vision Assessment",
+    "section": "16.2 Additional reading",
+    "text": "16.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Colour Vision Assessment</span>"
+    ]
+  },
+  {
+    "objectID": "node_17.html",
+    "href": "node_17.html",
+    "title": "17  Case Study: UK Aviation",
+    "section": "",
+    "text": "17.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Case Study: UK Aviation</span>"
+    ]
+  },
+  {
+    "objectID": "node_17.html#first",
+    "href": "node_17.html#first",
+    "title": "17  Case Study: UK Aviation",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Case Study: UK Aviation</span>"
+    ]
+  },
+  {
+    "objectID": "node_17.html#additional-reading",
+    "href": "node_17.html#additional-reading",
+    "title": "17  Case Study: UK Aviation",
+    "section": "17.2 Additional reading",
+    "text": "17.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Case Study: UK Aviation</span>"
+    ]
+  },
+  {
+    "objectID": "node_18.html",
+    "href": "node_18.html",
+    "title": "18  Measuring Light",
+    "section": "",
+    "text": "18.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Measuring Light</span>"
+    ]
+  },
+  {
+    "objectID": "node_18.html#first",
+    "href": "node_18.html#first",
+    "title": "18  Measuring Light",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Measuring Light</span>"
+    ]
+  },
+  {
+    "objectID": "node_18.html#additional-reading",
+    "href": "node_18.html#additional-reading",
+    "title": "18  Measuring Light",
+    "section": "18.2 Additional reading",
+    "text": "18.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Measuring Light</span>"
+    ]
+  },
+  {
+    "objectID": "node_19.html",
+    "href": "node_19.html",
+    "title": "19  Radiometry",
+    "section": "",
+    "text": "19.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Radiometry</span>"
+    ]
+  },
+  {
+    "objectID": "node_19.html#first",
+    "href": "node_19.html#first",
+    "title": "19  Radiometry",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Radiometry</span>"
+    ]
+  },
+  {
+    "objectID": "node_19.html#additional-reading",
+    "href": "node_19.html#additional-reading",
+    "title": "19  Radiometry",
+    "section": "19.2 Additional reading",
+    "text": "19.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Radiometry</span>"
+    ]
+  },
+  {
+    "objectID": "node_20.html",
+    "href": "node_20.html",
+    "title": "20  Photometry",
+    "section": "",
+    "text": "20.1 First",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Photometry</span>"
+    ]
+  },
+  {
+    "objectID": "node_20.html#first",
+    "href": "node_20.html#first",
+    "title": "20  Photometry",
+    "section": "",
+    "text": "Definition\n\n\n\nOptics is study of the behaviour and properties of light, including its interactions with matter.",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Photometry</span>"
+    ]
+  },
+  {
+    "objectID": "node_20.html#additional-reading",
+    "href": "node_20.html#additional-reading",
+    "title": "20  Photometry",
+    "section": "20.2 Additional reading",
+    "text": "20.2 Additional reading\n\nIf feeling less comfortable\n\n\n\nIf feeling more comfortable",
+    "crumbs": [
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Photometry</span>"
     ]
   },
   {
     "objectID": "node_xx.html",
     "href": "node_xx.html",
-    "title": "2  Additional notes / Rough working",
+    "title": "21  Additional notes / Rough working",
     "section": "",
-    "text": "3 Testing ?\n\n3.0.1 Quick Quiz\nWhich of these is used to join datasets in R?\nleft_join()merge()rbind()spread()\n\n\nWhat is 1 and this left_join()merge()rbind()spread()\nIs this true? Answer: TRUEFALSE\nIs this true? Answer: TRUEFALSE\n\nTest your knowledge:\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\n\nI am going to learn a lot: TRUEFALSE\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\n\n\n\nClick here to see the solution\n\n\n\n\n\n\n\n\n\n\n\n\n3.0.2 Fill-In-The-Blanks (fitb())\nCreate fill-in-the-blank questions using fitb(), providing the answer as the first argument.\n\n2 + 2 is \n\n\n\n\n\n\n\nNote\n\n\n\nThis is a note callout.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning callout\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is an important callout\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution callout\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip callout.With a bit of code.",
+    "text": "22 Testing ?\n\n22.0.1 Quick Quiz\nWhich of these is used to join datasets in R?\nleft_join()merge()rbind()spread()\n\n\nWhat is 1 and this left_join()merge()rbind()spread()\nIs this true? Answer: TRUEFALSE\nIs this true? Answer: TRUEFALSE\n\nTest your knowledge:\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\n\nI am going to learn a lot: TRUEFALSE\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\n\n\n\nClick here to see the solution\n\n\n\n\n\n\n\n\n\n\n\n\n22.0.2 Fill-In-The-Blanks (fitb())\nCreate fill-in-the-blank questions using fitb(), providing the answer as the first argument.\n\n2 + 2 is \n\n\n\n\n\n\n\nNote\n\n\n\nThis is a note callout.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning callout\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is an important callout\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution callout\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip callout.With a bit of code.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Additional notes / Rough working</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Additional notes / Rough working</span>"
     ]
   }
 ]

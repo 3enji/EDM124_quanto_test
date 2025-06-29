@@ -16,13 +16,32 @@ book:
   chapters:
     - index.qmd
     - node_01.qmd
+    - node_02.qmd
+    - node_03.qmd
+    - node_04.qmd
+    - node_05.qmd
+    - node_06.qmd
+    - node_07.qmd
+    - node_08.qmd
+    - node_09.qmd
+    - node_10.qmd
+    - node_11.qmd
+    - node_12.qmd
+    - node_13.qmd
+    - node_14.qmd
+    - node_15.qmd
+    - node_16.qmd
+    - node_17.qmd
+    - node_18.qmd
+    - node_19.qmd
+    - node_20.qmd
     - node_xx.qmd
 
 format:
   html:
-    # theme: [darkly, cosmo]
+    highlight-style: a11y
     theme: 
-      light: cosmo #cosmo, materia, simplex, flatly,
+      light: flatly #cosmo, materia, simplex, flatly, a11y
       dark: darkly #darkly, solar, slate
     code-fold: true
     code-tools: true
@@ -34,8 +53,8 @@ format:
     html-math-method: mathjax
     # fontsize: 1.1em
     css: 
-      # styles.css
-      include/webex.css
+      - include/webex.css
+      - styles.css
     include-after-body: 
       include/webex.js
     categories:
@@ -59,7 +78,10 @@ format:
       #       localStorage.setItem("fontStyle", newFont);
       #     };
       #   </script>
-    pdf:
-      pdf-engine: xelatex   # or lualatex / pdflatex
-    docx:
-      default
+  pdf:
+    pdf-engine: xelatex   # or lualatex / pdflatex
+    # mainfont: "Open Sans"
+    # monofont: "Roboto Mono"
+    include-in-header: preamble.tex
+  docx:
+    default

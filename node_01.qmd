@@ -1,5 +1,5 @@
 ---
-title: "Node 01 - Basic Mathematical Techniques"
+# title: "Basic Mathematical Techniques"
 author: "Benjamin Evans"
 format: 
   html:
@@ -7,15 +7,22 @@ format:
       in-header: webexercises-deps.html
     # css: webex.css
     # include-after-body: webex.js
+    axe:
+      output: document
 editor:
   markdown:
     wrap: 72
   render-on-save: true
 jupyter: false
+
+bibliography: references.bib
+#csl: apa.csl # Optional: for formatted output; remove or adjust as needed
 ---
+# Basic Mathematical Techniques {#sec-basic-mathematical-techniques}
 <!-- [📄 Download PDF version](OV1114-Node-Notes.pdf){.download} -->
 ```{r setup}
 #| echo: false
+# install.packages("webexercises")
 library(webexercises)
 ```
 
@@ -23,8 +30,7 @@ library(webexercises)
 
 Indices are introduced in the Quantitative Methods for Optometry module (OV1115) and are used extensively in the Optometric Physics (OV1114) module.
 
-
-![Indices include a base and a power/index/exponent.](./figures/node01_indicesBaseExp.jpg){#fig-base-power}
+![Indices include a base and a power/index/exponent.](./figures/node01_indicesBaseExp.jpg){#fig-base-power fig-alt="The base and exponent that make up an index or power."}
 
 The term $a^{b}$ represents the number $a$ being multiplied by itself $b$
 times.
@@ -87,15 +93,15 @@ $a^{3} =$ `1*a*a*a`
 Therefore our rules of indices would be written (or typed) as:
 
 ::: {.table-scroll}
-| Rule | Code Notation |
-|------|----------------|
-| @eq-indicesR1 | `(a^p)*(a^q) = a^(p+q)` |
-| @eq-indicesR2 | `(a^p)/(a^q) = a^(p−q)` |
-| @eq-indicesR3 | `(a^p)^q = a^(p*q)`     |
-| @eq-indicesR4 | `a^(-p) = 1/(a^p)`      |
-| @eq-indicesR5 | `a^0 = 1`               |
-| @eq-indicesR6 | `a^(1/p) = sqrt[p](a)`     |
-| @eq-indicesR7 | `a^(p/q) = sqrt[q](a^p)`   |
+| Label  | Equation | Code Notation |
+|------|----------|---------------|
+| @eq-indicesR1 | $a^p \times a^q = a^{p+q}$  | `(a^p)*(a^q) = a^(p+q)`   |
+| @eq-indicesR2 | $a^p \div a^q = a^{p - q}$  | `(a^p)/(a^q) = a^(p−q)`   |
+| @eq-indicesR3 | $(a^p)^q = a^{p \cdot q}$   | `(a^p)^q = a^(p*q)`       |
+| @eq-indicesR4 | $a^{-p} = \frac{1}{a^p}$    | `a^(-p) = 1/(a^p)`        |
+| @eq-indicesR5 | $a^0 = 1$                   | `a^0 = 1`                 |
+| @eq-indicesR6 | $a^{1/p} = \sqrt[p]{a}$     | `a^(1/p) = sqrt[p](a)`    |
+| @eq-indicesR7 | $a^{p/q} = \sqrt[q]{a^p}$   | `a^(p/q) = sqrt[q](a^p)`  |
 :::
 
 Note the use of an asterisk (*) to represent multiplication, which avoids
@@ -108,6 +114,8 @@ $$
 a \cdot b 
 \equiv
 a \ast b
+\equiv
+a \times b
 $$
 
 ::: {.callout-caution}
@@ -118,18 +126,29 @@ $$
 $$
 :::
 
-::: {.callout-note}
-Test your knowledge!
 ```{r, echo=FALSE}
 a <- 2.5
-b <- round(runif(1, min = 2.4, max = 6.8), 1)
+# b <- round(runif(1, min = 2.4, max = 6.8), 1)
 b <- round(runif(1, min = 4, max = 8))
 result <- a * b
 ```
+
+::: {.callout-important title="Check your understanding" .webex-check .webex-box}
+
 `r a` $\cdot$ `r b` = `r fitb(result)`
-<!-- `r result` -->
+
+```{r, results='asis', echo = FALSE}
+opts <- c(
+  "add the bases and multiply the exponents",
+  answer = "keep the base the same and add the exponents",
+  "multiply the bases and exponents together"
+)
+
+cat("When you simplify $a^3 \\times a^4$, you:", longmcq(opts))
+```
 :::
 
+::: {.callout-note}
 
 ### Questions - Indices
 
@@ -147,7 +166,7 @@ $\; 21a^{3}b^{2} \div 7ab^{4}$
 $\; 25^{\frac{1}{2}}$
 1. 
 $\; {(-5)}^{-3}$ -->
-<!-- ::: {.callout-tip collapse=true title="Show solutions"}
+<!-- ::: {.callout-tip collapse=true title="Numerical solutions"}
 1. $6x^{5}$
 1. $2p^{2}$
 1. $p^{2}$
@@ -157,28 +176,16 @@ $\; {(-5)}^{-3}$ -->
 1. $\frac{1}{(-125)}$
 ::: -->
 
-::: {.columns}
-
-::: {.column width="50%"}
-
 1. $\; 2x^{3} \times 3x^{2}$  
-2. $\; 4p^{3} \div 2p$  
-3. $\; {(p^{3})}^{2} \div p^{4}$  
-4. $\; (x^{0}+y^{0}) \div (2z^{0})$
-
+1. $\; 4p^{3} \div 2p$  
+1. $\; {(p^{3})}^{2} \div p^{4}$  
+1. $\; (x^{0}+y^{0}) \div (2z^{0})$
+1. $\; 21a^{3}b^{2} \div 7ab^{4}$  
+1. $\; 25^{\frac{1}{2}}$  
+1. $\; {(-5)}^{-3}$
 :::
 
-::: {.column width="50%"}
-
-5. $\; 21a^{3}b^{2} \div 7ab^{4}$  
-6. $\; 25^{\frac{1}{2}}$  
-7. $\; {(-5)}^{-3}$
-
-:::
-
-:::
-
-::: {.callout-tip collapse=true title="Show solutions"}
+::: {.callout-tip collapse=true title="Numerical solutions"}
 
 ::: {.columns}
 
@@ -225,15 +232,15 @@ Or, as entered into a computer: `3.57*10^(4) = 35,700`
 
 In many computer systems superscript exponents $\left(10^{4}\right)$ can be
 inconvenient to display.  As such, scientific notation is written using E
-notation.  This is where `En` (or sometimes lowercase `e`) represents 
-"times 10 raised to the power $n$". Mathematically:
+notation.  This is where `E` (or sometimes lowercase `e`) represents 
+"times 10 raised to the power". Mathematically:
 $$
 a\textrm{E}\,n \equiv a \times 10^{n}
 $$
 
 For example,
 $$
-	\texttt{3.57E4} \equiv 3.57 * 10^4
+	\texttt{3.57E4} \equiv 3.57 \times 10^4
 $$
 $$
 	\texttt{9.1E-31} \equiv 9.1 \times 10^{-31}
@@ -241,7 +248,7 @@ $$
 $$
 	\texttt{1.055e-34} \equiv 1.055 \times 10^{-34}
 $$
-So if, when using a computer, if you see text such as, `3.02e+2` or `3.02E+2` know that it is equivalent to $3.02 \times 10^{2}.$ 
+So when working on a computer, if you come across text like `3.02e+2` or `3.02E+2`, understand that it means $3.02 \times 10^{2}$. Likewise, `1.60E-19` is the same as $1.60 \times 10^{-19}$.
 
 This `E` notation is used to represent large or small numbers more efficiently in computations and data storage. This notation is also referred to as _scientific_ notation in software such as Microsoft Excel.  
 
@@ -290,16 +297,36 @@ Many optometric physics problems require some form of unit conversion and it's
 important to ensure that you are able to convert between the units and prefixes
 shown in @tbl-prefixes.
 
+::: {.callout-important title="Check your understanding" .webex-check .webex-box}
 
+```{r, results='asis', echo = FALSE}
+opts_1 <- c(
+  "5 * 10^3.2",
+  answer = "3.2 × 10^5",
+  "320,000"
+)
+opts_2 <- c(
+  answer = "a nanometre is 1000 times smaller than a micrometre",
+  "a micrometre is 1000 times smaller than a nanometre",
+  "a micrometre and a nanometre are the same size"
+)
+cat("What does `3.2E+5` mean?", longmcq(opts_1))
+
+cat("Which is true?", longmcq(opts_2))
+```
+
+:::
+
+::: {.callout-note}
 ### Questions - Unit Conversions
-
 8. Convert 600nm into metres  
 1. Convert 38μm into nanometres (nm)
 1. Convert 2.2GHz to Hz
 1. Calculate 3.4cm $\times$ 2.1mm giving your answer in m^2^
 1. Convert your answer to the previous question to cm^2^
+:::
 
-::: {.callout-tip collapse=true title="Show solutions"}
+::: {.callout-tip collapse=true title="Numerical solutions"}
 
 8. $\; 6.00 \times 10^{-7} \; \textrm{m}$ (3sf)  
 1. $\; 3.8 \times 10^{4} \; \textrm{nm}$ or $38,000 \textrm{nm}$
@@ -352,25 +379,24 @@ A value of 100 could have one, two, or three significant figures depending on ho
 - $5.060 \times 10^{4}$ ($\equiv$ 50,600) has 4 significant figures
 - `5.67E+12` ($\equiv$ 5,670,000,000,000) has 3 significant figures
 
-
-::: {.callout-tip}
 If not specified in the question give your answer in full
-and then round your answer to 3 significant figures on the line below.
-:::
+and then round your answer to **3 significant figures** on the line below.
 
+
+::: {.callout-note}
 ### Questions - Rounding
-
 13. Round $4.312728302$ to four significant figures
 1. Round $6.0067343\times 10^{-4}$ to three significant figures
+:::
 
-::: {.callout-tip collapse=true title="Show solutions"}
+::: {.callout-tip collapse=true title="Numerical solutions"}
 
 13. $\; 4.313$ (4sf)  
 1. $\; 6.01 \times 10^{-4}$ (3sf)
 
 :::
 
-::: {.callout-note}
+::: {.callout-warning}
 In OV1114, we never round to fewer than 3 significant figures, and rounding 
 should only be done at the final step of a calculation. Use full precision 
 throughout multi-step problems. For example, if step 1 gives 2.54832, do not 
@@ -405,16 +431,16 @@ in the optometric physics module.
 
 ::: {.table-scroll}
 | Symbol       | Meaning                            | Example Use                       |
-|--------------|-------------------------------------|----------------------------------|
-| $\Delta$            | Change / difference                | $\Delta x = x_2 - x_1$            |
-| $\alpha$            | Alpha (angle)                      | $\alpha = 30^\circ$               |
-| $\beta$            | Beta (angle)                       | $\beta = 1.32 \; \textrm{rad}$   |
-| $\lambda$            | Lambda (symbol for wavelength)     | $\lambda = 500\,\textrm{nm}$      |
-| $\Omega$            | Omega (symbol for solid angle)     | $\Omega = 100 \; \textrm{sr}$     |
-| $\phi$            | Phi (angle or flux)                | $\phi_{e} = 2.5 \; \textrm{W}$    |
-| $\pi$           | Pi (mathematical constant)         | $\pi = 3.14159\ldots$             |
-| $\psi$            | Psi (wavefunction)                 | $\psi(x, t) = \cos{(2x+t)}$       |
-| $\theta$            | Theta (angle)                      | $\theta = 45^\circ$               | 
+|--------------|------------------------------------|-----------------------------------|
+| $\Delta$     | Change / difference                | $\Delta x = x_2 - x_1$            |
+| $\alpha$     | Alpha (angle)                      | $\alpha = 30^\circ$               |
+| $\beta$      | Beta (angle)                       | $\beta = 1.32 \; \textrm{rad}$    |
+| $\lambda$    | Lambda (symbol for wavelength)     | $\lambda = 500\,\textrm{nm}$      |
+| $\Omega$     | Omega (symbol for solid angle)     | $\Omega = 100 \; \textrm{sr}$     |
+| $\phi$       | Phi (angle or flux)                | $\phi_{e} = 2.5 \; \textrm{W}$    |
+| $\pi$        | Pi (mathematical constant)         | $\pi = 3.14159\ldots$             |
+| $\psi$       | Psi (wavefunction)                 | $\psi(x, t) = \cos{(2x+t)}$       |
+| $\theta$     | Theta (angle)                      | $\theta = 45^\circ$               | 
 : Common Greek letters used to represent angles, constants, and physical 
 quantities throughout the module.  
 {#tbl-greek-symbols}
@@ -422,6 +448,7 @@ quantities throughout the module.
 
 ## Bonus Questions
 
+::: {.callout-note}
 ### Questions - Bonus
 
 _Note: for all of the questions below give your answer in standard form._
@@ -429,8 +456,9 @@ _Note: for all of the questions below give your answer in standard form._
 15. Convert 43 nm into metres
 1. Convert 18 km into nm
 1. Convert 48 nm^2^ into cm^2^
+:::
 
-::: {.callout-tip collapse=true title="Show solutions"}
+::: {.callout-tip collapse=true title="Numerical solutions"}
 
 15. $\; 4.3 \times 10^{-8} \; \textrm{m}$
 1. $\; 1.8 \times 10^{13} \; \textrm{nm}$
@@ -446,17 +474,17 @@ A group of biologists decide to travel from their hometown to a neighbouring vil
 1. What was their average speed in metres per second? 
 1. On average how many miles did the group cover each day?
 
-::: {.callout-tip collapse=true title="Numerical Solutions"}
+::: {.callout-tip collapse=true title="Numerical solutions"}
 1. $\; 1.99 \times 10^{−2} \; \textrm{m/s}$ [or metres per second] (3sf)
 1. $\; 1.07$ miles per day (3sf)
 :::
 
-`r hide("Click here to see the solution")`
+<!-- `r hide("Click here to see the solution")`
 
 1. $\; 1.99 \times 10^{−2} \; \textrm{m/s}$ [or metres per second] (3sf)
 1. $\; 1.07$ miles per day (3sf)
 
-`r unhide()`
+`r unhide()` -->
 
 ::: {.callout-warning collapse=true title="Working"}
 
@@ -627,6 +655,25 @@ $$
 :::
 <!-- ::: -->
 
+::: {.callout-important title="Check your understanding" .webex-check .webex-box}
+
+```{r, results='asis', echo = FALSE}
+opts_3 <- c(
+  "2",
+  "1",
+  answer = "3"
+)
+opts_4 <- c(
+  "Divide distance by time to get average speed",
+  "Multiply distance by time to get average speed",
+  answer = "Divide distance by time to get average speed and convert the units for distance and time"
+)
+# cat("How many significant figures does the number 205 have?", longmcq(opts_3))
+
+cat("When converting from furlongs per fortnight to metres per second (or between any two velocity units), you:", longmcq(opts_4))
+```
+
+:::
 
 ## Additional reading
 
@@ -643,3 +690,18 @@ $$
 - **Indices** — [Link (Math Centre)](https://www.mathcentre.ac.uk/resources/uploaded/mc-ty-indicespowers-2009-1.pdf) *(also used in OV1115)*
 - **Units & Prefixes** — [Link (NPL)](https://www.npl.co.uk/si-units)
 
+<!-- ## Testing with bib file
+
+### If feeling less comfortable {.unnumbered}
+
+- Indices — @bbc_indices
+- Standard form — @bbc_stdform
+- Units & Prefixes — @bbc_units
+- Rounding — @khan_rounding
+
+### If feeling more comfortable {.unnumbered}
+
+- Indices — @mathcentre_indices (also used in OV1115)
+- Units & Prefixes — @npl_units
+
+## References {.unnumbered} -->

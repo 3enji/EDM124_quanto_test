@@ -21,3 +21,6 @@ requirements.txt
 *.docx
 *.pdf
 *.zip
+
+*.log
+.prettierrc.yml
