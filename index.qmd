@@ -1,6 +1,21 @@
 ---
 # title: "Foreword"
-author: "Benjamin Evans & Marisa Rodríguez-Carmona"
+author: 
+  - name: Benjamin Evans
+    email: benjamin.evans.2@citystgeorges.ac.uk
+    # orcid: 0000-0001-6611-4500
+    # degrees:
+    # - PhD
+    # - BSc
+    # corresponding: true
+    # custom-info: "custom value"
+    affiliation: City St George's, University of London
+  - name: Marisa Rodríguez-Carmona
+    email: marisa@citystgeorges.ac.uk
+    # degrees:
+    # - PhD
+    # - MSci
+    affiliation: City St George's, University of London
 numbered: false
 format: 
   html:

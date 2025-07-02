@@ -1,6 +1,9 @@
 ---
 # title: "The Electromagnetic Spectrum"
-author: "Benjamin Evans"
+author: 
+  - name: Benjamin Evans
+    email: benjamin.evans.2@citystgeorges.ac.uk
+    orcid: 0000-0001-6611-4500
 format: 
   html:
     includes:
@@ -247,7 +250,7 @@ v = f\lambda
 $$  {#eq-waveEquation}
 Where $v$ is the phase velocity of the wave [m/s], $f$ is the frequency of the wave [Hz or s^-1^], and $\lambda$ is the wavelength of the wave [m].
 
-::: {.callout-note}
+::: {.callout-note icon="false"}
 
 ### Questions - Wave frequency, wavelength, and velocity calculations
 
@@ -415,19 +418,11 @@ $$
 \begin{aligned}
 A 
 	&= \pi r^{2} \\
-	\rightarrow A 
-	&= (\pi)\left(14^{2}\right) 
-	\; {[\textrm{m}]}^{2} 
-	\\
-	&= 196 \pi \; [\textrm{m}^{2} ] 
-  \\
-  &= 615.7521601\ldots \; \textrm{m}^{2}  
-  \\
-  &= \underline{%
-    616 
-    \; \textrm{m}^{2} 
-    \; \; (\textrm{3sf})
-  }
+\rightarrow A 
+	&= (\pi)\left(14^{2}\right) \; {[\textrm{m}]}^{2} \\
+	&= 196 \pi \; [\textrm{m}^{2} ] \\
+  &= 615.7521601\ldots \; \textrm{m}^{2} \\
+  &= \underline{616 \; \textrm{m}^{2} \; \; (\textrm{3sf})}
 \end{aligned}
 $$
 

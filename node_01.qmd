@@ -1,6 +1,9 @@
 ---
 # title: "Basic Mathematical Techniques"
-author: "Benjamin Evans"
+author: 
+  - name: Benjamin Evans
+    email: benjamin.evans.2@citystgeorges.ac.uk
+    orcid: 0000-0001-6611-4500
 format: 
   html:
     includes:
@@ -19,7 +22,7 @@ bibliography: references.bib
 #csl: apa.csl # Optional: for formatted output; remove or adjust as needed
 ---
 # Basic Mathematical Techniques {#sec-basic-mathematical-techniques}
-<!-- [📄 Download PDF version](OV1114-Node-Notes.pdf){.download} -->
+
 ```{r setup}
 #| echo: false
 # install.packages("webexercises")
@@ -148,7 +151,7 @@ cat("When you simplify $a^3 \\times a^4$, you:", longmcq(opts))
 ```
 :::
 
-::: {.callout-note}
+::: {.callout-note icon="false"}
 
 ### Questions - Indices
 
@@ -317,7 +320,7 @@ cat("Which is true?", longmcq(opts_2))
 
 :::
 
-::: {.callout-note}
+::: {.callout-note icon="false"}
 ### Questions - Unit Conversions
 8. Convert 600nm into metres  
 1. Convert 38μm into nanometres (nm)
@@ -448,7 +451,7 @@ quantities throughout the module.
 
 ## Bonus Questions
 
-::: {.callout-note}
+::: {.callout-note icon="false"}
 ### Questions - Bonus
 
 _Note: for all of the questions below give your answer in standard form._
@@ -549,6 +552,10 @@ $$
 
 _Recall from @tbl-math-symbols that $\therefore$ is a shorthand way of 
 writing 'therefore'._
+
+::: {.content-visible when-format="docx"}
+{{< pagebreak >}}
+:::
 
 ##### Step 3:  Convert `per fortnight' to per hour and per day {.unnumbered}
 

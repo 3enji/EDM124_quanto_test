@@ -24,18 +24,41 @@ book:
     - node_07.qmd
     - node_08.qmd
     - node_09.qmd
-    - node_10.qmd
-    - node_11.qmd
-    - node_12.qmd
-    - node_13.qmd
-    - node_14.qmd
-    - node_15.qmd
-    - node_16.qmd
-    - node_17.qmd
-    - node_18.qmd
-    - node_19.qmd
-    - node_20.qmd
     - node_xx.qmd
+    # - part: "Electromagnetic Spectrum"
+    #   chapters:
+    #   - node_02.qmd
+    #   - node_03.qmd
+    # - part: "Geometrical Optics"
+    #   chapters:
+    #   - node_04.qmd
+    #   - node_05.qmd
+    #   - node_06.qmd
+    #   - node_07.qmd
+    # - part: "Wave Optics"
+    #   chapters:
+    #   - node_08.qmd
+    #   - node_09.qmd
+    # - part: "Physics of the Eye"
+    #   chapters:
+    #   - node_10.qmd
+    #   - node_11.qmd
+    # - part: "Colour"
+    #   chapters:
+    #   - node_12.qmd
+    #   - node_13.qmd
+    #   - node_14.qmd
+    #   - node_15.qmd
+    #   - node_16.qmd
+    #   - node_17.qmd
+    # - part: "Measuring Light"
+    #   chapters:
+    #   - node_18.qmd
+    #   - node_19.qmd
+    #   - node_20.qmd
+    # - part: "Appendices"
+    #   chapters:
+    #   - node_xx.qmd
 
 format:
   html:
